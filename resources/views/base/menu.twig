@@ -1,0 +1,166 @@
+<div class="site-menubar">
+    <div class="site-menubar-header">
+        <div class="cover overlay">
+            <img class="cover-image" src="{{ TwigFunctions('app_root') }}resources/views/img/user_background.jpg" alt="..."/>
+            <div class="overlay-panel vertical-align overlay-background">
+                <div class="vertical-align-middle">
+                    <a class="avatar avatar-lg" href="javascript:void(0)">
+                        <img src="{{ TwigFunctions('app_root') }}resources/views/img/user.png" alt=""/>
+                    </a>
+                    <div class="site-menubar-info">
+                        <h5 class="site-menubar-user">
+                            {{ TwigFunctions('user').nombre }}
+                        </h5>
+                        <p class="site-menubar-email">
+                            {{ TwigFunctions('user').cargo }}
+                            <br/>
+                            {{ TwigFunctions('user').gerencia }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="site-menubar-body">
+        <div>
+            <div>
+                <ul class="site-menu" data-plugin="menu">
+                    <li class="site-menu-item {{ TwigFunctions('first_uri_segment') == '' ? 'active' : '' }}" style="pointer-events:none; opacity:0.6;">
+                        <a class="animsition-link" href="{{ TwigFunctions('app_root') }}dashboard">
+                            <i class="site-menu-icon fa-home" aria-hidden="true"></i>
+                            <span class="site-menu-title">
+                                Dashboard
+                            </span>
+                        </a>
+                    </li>
+                    <li class="site-menu-item {{ TwigFunctions('first_uri_segment') == 'sites' ? 'active' : '' }}" style="pointer-events:none; opacity:0.6;">
+                        <a class="animsition-link" href="{{ TwigFunctions('app_root') }}sites">
+                            <i class="site-menu-icon fa-dot-circle-o" aria-hidden="true"></i>
+                            <span class="site-menu-title">
+                                Sites
+                            </span>
+                        </a>
+                    </li>
+                    <li class="site-menu-item has-sub {{ TwigFunctions('first_uri_segment') == 'datafill' ? 'active' : '' }}" style="pointer-events:none; opacity:0.6;">
+                        <a href="javascript:void(0)">
+                            <i class="site-menu-icon fa-th-large" aria-hidden="true">
+                            </i>
+                            <span class="site-menu-title">
+                                Datafill
+                            </span>
+                            <span class="site-menu-arrow">
+                            </span>
+                        </a>
+                        <ul class="site-menu-sub">
+                            <li class="site-menu-item">
+                                <a class="animsition-link" href="{{ TwigFunctions('app_root') }}datafill/solicitudes">
+                                    <span class="site-menu-title">
+                                        Solicitudes
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="site-menu-item">
+                                <a class="animsition-link" href="{{ TwigFunctions('app_root') }}datafill/site">
+                                    <span class="site-menu-title">
+                                        Site
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="site-menu-item">
+                                <a class="animsition-link" href="{{ TwigFunctions('app_root') }}datafill/peran">
+                                    <span class="site-menu-title">
+                                        PE RAN
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="site-menu-item has-sub {{ TwigFunctions('first_uri_segment') == 'enlaces' ? 'active' : '' }}">
+                        <a href="javascript:void(0)">
+                            <i class="site-menu-icon fa-share-alt" aria-hidden="true">
+                            </i>
+                            <span class="site-menu-title">
+                                Enlaces
+                            </span>
+                            <span class="site-menu-arrow">
+                            </span>
+                        </a>
+                        <ul class="site-menu-sub">
+                            <li class="site-menu-item" style="pointer-events:none; opacity:0.6;">
+                                <a class="animsition-link" href="{{ TwigFunctions('app_root') }}enlaces/seguimiento">
+                                    <span class="site-menu-title">
+                                        Seguimiento
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="site-menu-item">
+                                <a class="animsition-link" href="{{ TwigFunctions('app_root') }}enlaces/lista">
+                                    <span class="site-menu-title">
+                                        Enlaces
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="site-menu-item has-sub {{ TwigFunctions('first_uri_segment') == 'backhaul' ? 'active' : '' }}" style="pointer-events:none; opacity:0.6;">
+                        <a href="javascript:void(0)">
+                            <i class="site-menu-icon fa-arrows" aria-hidden="true">
+                            </i>
+                            <span class="site-menu-title">
+                                PAG + CSR
+                            </span>
+                            <span class="site-menu-arrow">
+                            </span>
+                        </a>
+                        <ul class="site-menu-sub">
+                            <li class="site-menu-item">
+                                <a class="animsition-link" href="{{ TwigFunctions('app_root') }}backhaul/recursos">
+                                    <span class="site-menu-title">
+                                        Recursos IP Backhaul
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="site-menu-item">
+                                <a class="animsition-link" href="{{ TwigFunctions('app_root') }}backhaul/interfaces">
+                                    <span class="site-menu-title">
+                                        Interfaces
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="site-menu-item has-sub {{ TwigFunctions('first_uri_segment') == 'topologias' ? 'active' : '' }}">
+                        <a href="javascript:void(0)">
+                            <i class="site-menu-icon md-device-hub" aria-hidden="true">
+                            </i>
+                            <span class="site-menu-title">
+                                Topologías
+                            </span>
+                            <span class="site-menu-arrow">
+                            </span>
+                        </a>
+                        <ul class="site-menu-sub">
+                            <li class="site-menu-item">
+                                <a class="animsition-link" href="{{ TwigFunctions('app_root') }}topologias/constelacion">
+                                    <span class="site-menu-title">
+                                        Site-Link Constelation
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="site-menu-sub">
+                            <li class="site-menu-item" style="pointer-events:none; opacity:0.6;">
+                                <a class="animsition-link" href="{{ TwigFunctions('app_root') }}topologias/map">
+                                    <span class="site-menu-title">
+                                        Site-Link Map
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

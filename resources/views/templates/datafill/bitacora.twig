@@ -1,0 +1,378 @@
+<div class="panel-heading">
+    <h3 class="panel-title">
+        Bitácora de la Solicitud
+        <span class="text-primary">
+            {{ bitacora.id }}
+        </span>
+    </h3>
+    <div class="panel-actions">
+        <div class="dropdown">
+            <a class="panel-action" data-toggle="dropdown" href="#" aria-expanded="false">
+                <i class="icon md-settings" aria-hidden="true">
+                </i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-bullet" role="menu">
+                <a class="dropdown-item text-danger delete-control" href="solicitudes/eliminar/{{ bitacora.id }}" role="menuitem" data-id="{{ bitacora.id }}">
+                    <i class="icon fa-remove" aria-hidden="true">
+                    </i>
+                    Eliminar
+                </a>
+            </div>
+        </div>
+        <a class="panel-action icon md-close" aria-hidden="true">
+        </a>
+    </div>
+</div>
+<div class="panel-body animation-fade">
+    <div class="card border border-success">
+        <div class="card-block">
+            <h4 class="card-title text-success">
+                Información de Solicitud
+            </h4>
+            <p class="card-text">
+                {{ bitacora.solicitud.DESCRIPCION }}
+            </p>
+            <table class="table table-hover table-bordered table-striped text-nowrap w-full m-0">
+                <thead>
+                <tr>
+                    <th class="text-center">
+                        ID
+                    </th>
+                    <th class="text-center">
+                        Proyecto
+                    </th>
+                    <th class="text-center">
+                        NE
+                    </th>
+                    <th class="text-center">
+                        FE
+                    </th>
+                    <th class="text-center">
+                        Solicitante
+                    </th>
+                    <th class="text-center">
+                        Fecha
+                    </th>
+                    <th class="text-center">
+                        Week
+                    </th>
+                    <th class="text-center">
+                        Estado
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="text-center">
+                        {{ bitacora.solicitud.SOLICITUD_ID }}
+                    </td>
+                    <td class="text-center">
+                        {{ bitacora.solicitud.PROYECTO }}
+                    </td>
+                    <td class="text-center">
+                        {{ bitacora.solicitud.NE }}
+                    </td>
+                    <td class="text-center">
+                        {{ bitacora.solicitud.FE }}
+                    </td>
+                    <td class="text-center">
+                        {{ bitacora.solicitud.SOLICITANTE }}
+                    </td>
+                    <td class="text-center">
+                        {{ bitacora.solicitud.FECHA }}
+                    </td>
+                    <td class="text-center">
+                        {{ bitacora.solicitud.WEEK }}
+                    </td>
+                    <td class="text-center">
+                        {% if bitacora.solicitud.ESTADO == "SIN ATENDER" %}
+                            <span class="badge badge-dark w-full">sin atender</span>
+                        {% elseif bitacora.solicitud.ESTADO == "ATENDIDO POR ING. TX" %}
+                            <span class="badge badge-primary w-full">ing. tx</span>
+                        {% elseif bitacora.solicitud.ESTADO == "ATENDIDO POR OYM" %}
+                            <span class="badge badge-danger w-full">oym</span>
+                        {% elseif bitacora.solicitud.ESTADO == "TERMINADO" %}
+                            <span class="badge badge-success w-full">terminado</span>
+                        {% endif %}
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            {% if bitacora.extras|length > 0 %}
+            <table class="table table-hover table-bordered table-striped text-nowrap w-full m-0">
+                <thead>
+                <tr>
+                    <th class="text-center">
+                        Fecha
+                    </th>
+                    <th class="text-center">
+                        Archivo
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for extra in bitacora.extras %}
+                <tr>
+                    <td class="text-center">
+                        {{ extra.FECHA }}
+                    </td>
+                    <td class="text-center">
+                        <a class="text-success" href="{{ TwigFunctions('app_root') }}files/datafill/solicitudes/extras/{{ extra.ARCHIVO }}" style="text-decoration: none !important" download>
+                            {{ extra.ARCHIVO }}
+                        </a>
+                    </td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+            {% endif %}
+            <p class="card-text"><br>Para agregar archivos que sean útiles a la realización del Datafill, adjuntarlo haciendo click en Cargar Archivos. Se permite cargar cualquier tipo de archivo.</p>
+            <div class="ribbon ribbon-reverse ribbon-clip ribbon-success" data-target="#modal-agregar-extra-archivo" data-toggle="modal">
+                <span class="ribbon-inner" style="cursor: pointer;">Cargar Archivos</span>
+            </div>
+        </div>
+    </div>
+    <div class="card border border-{% if bitacora.tx|length > 0 %}primary{% else %}dark{% endif %}">
+        <div class="card-block">
+            <h4 class="card-title text-{% if bitacora.tx|length > 0 %}primary{% else %}dark{% endif %}">
+                Ingeniería de Transmisiones
+            </h4>
+            <p>Por favor usar el siguiente formato para cargar los Datafill <a href="{{ TwigFunctions("app_root") }}files/datafill/Formato_Datafill_v3.xlsx">Formato_Datafill_v3</a></p>
+            {% if bitacora.tx|length > 0 %}
+            <table class="table table-hover table-bordered table-striped text-nowrap w-full m-0">
+                <thead>
+                <tr>
+                    <th class="text-center">
+                        Fecha
+                    </th>
+                    <th class="text-center">
+                        Respuesta
+                    </th>
+                    <th class="text-center">
+                        Responsable
+                    </th>
+                    <th class="text-center">
+                        Herramientas
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for tx in bitacora.tx %}
+                <tr>
+                    <td class="text-center">
+                        {{ tx.FECHA }}
+                    </td>
+                    <td class="text-center">
+                        <a class="text-primary" href="{{ TwigFunctions("app_root") }}files/datafill/solicitudes/tx/{{ tx.ARCHIVO }}" style="text-decoration: none !important" download>
+                            {{ tx.ARCHIVO }}
+                        </a>
+                    </td>
+                    <td class="text-center">
+                        {{ tx.RESPONSABLE }}
+                    </td>
+                    <td class="text-center">
+                        <a href="javascript:void(0)" style="text-decoration: none" data-target="#modal-actualizar-tx-archivo" data-toggle="modal">[ Actualizar ]</a>
+                    </td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+            {% else %}
+                <p class="text-center">Esta solicitud aún no ha sido atentida por Ingeniería de Transmisiones.</p>
+            {% endif %}
+            <div class="ribbon ribbon-reverse ribbon-clip ribbon-primary" data-target="#modal-cargar-tx-archivo" data-toggle="modal">
+                <span class="ribbon-inner" style="cursor: pointer;">Subir Datafill</span>
+            </div>
+        </div>
+    </div>
+    <div class="card border border-{% if bitacora.servicios.data|length > 0 %}danger{% else %}dark{% endif %}">
+        <div class="card-block">
+            <h4 class="card-title text-{% if bitacora.servicios.data|length > 0 %}danger{% else %}dark{% endif %}">
+                Servicios y Asignación de Recursos OyM
+            </h4>
+            {% if bitacora.servicios.data|length > 0 %}
+            <p>Las solicitudes con estado <strong>Sin Solicitar</strong> requieren que haga click en el botón Solicitar, ubicado en la parte derecha.
+            <br>Las solicitudes con estado <strong>Finalizado</strong> se pueden descargar incluidos en el archivo de la parte inferior de la bitácora.
+            <br>Las solicitudes con estado <strong>Rechazado</strong> deberán ser escaladas con el personal de OYM Acceso</p>
+            {% endif %}
+            {% if bitacora.servicios.data|length > 0 %}
+            <table class="table table-hover table-bordered table-striped text-nowrap w-full m-0">
+                <thead>
+                <tr>
+                    <th rowspan="2" class="text-center">
+                        Tipo
+                    </th>
+                    <th rowspan="2" class="text-center">
+                        Servicio
+                    </th>
+                    <th colspan="4" class="text-center">
+                        OT
+                    </th>
+                    <th rowspan="2" class="text-center">
+                        Validar Servicio
+                    </th>
+                </tr>
+                <tr>
+                    <th class="text-center">
+                        Información
+                    </th>
+                    <th class="text-center">
+                        Estado
+                    </th>
+                    <th class="text-center">
+                        Solicitado
+                    </th>
+                    <th class="text-center">
+                        Atendido
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for servicio in bitacora.servicios.data %}
+                <tr>
+                    <td class="text-center">
+                        {{ servicio.SERVICIO_TIPO }}
+                    </td>
+                    <td class="text-center">
+                        {{ servicio.SERVICIO_NOMBRE }}
+                    </td>
+                    <td class="text-center text-danger">
+                        {% if servicio.INFORMACION == 'NO REQUIERE OT' %}
+                            {{ servicio.INFORMACION }}
+                        {% else %}
+                            <strong>{{ servicio.INFORMACION }}</strong>
+                        {% endif %}
+                    </td>
+                    <td class="text-center">
+                        {{ servicio.ESTADO }}
+                    </td>
+                    <td class="text-center">
+                        {{ servicio.SOLICITADO }}
+                    </td>
+                    <td class="text-center">
+                        {{ servicio.RECIBIDO }}
+                    </td>
+                    <td class="text-center">
+                        {% if servicio.VALIDADO == 0 %}
+                            <a class="btn btn-xs btn-info waves-effect waves-light waves-round" href="{{ TwigFunctions("app_root") }}datafill/solicitudes/validar_servicios/{{ servicio.SOLICITUD_ID }}/{{ servicio.SERVICIO_ID }}" style="text-decoration: none">Validar</a>
+                        {% else %}
+                            <span class="badge badge-success">Validado</span>
+                        {% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+            {% else %}
+                <p class="text-center">Esta solicitud no cuenta con servicios.</p>
+            {% endif %}
+            {% if bitacora.servicios.ot_able == "ok" %}
+            <div class="ribbon ribbon-reverse ribbon-clip ribbon-danger">
+                <span class="ribbon-inner" id="solicitar-oym" style="cursor: pointer;">Solicitar OTs</span>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    <div class="card border border-{% if bitacora.datafills.data|length > 0 %}info{% else %}dark{% endif %}">
+        <div class="card-block">
+            <h4 class="card-title text-{% if bitacora.datafills.data|length > 0 %}info{% else %}dark{% endif %}">
+                Datafill Preview
+            </h4>
+            {% if bitacora.datafills.data|length > 0 %}
+            <table class="table table-hover table-bordered table-striped text-nowrap w-full m-0 table-responsive">
+                <thead>
+                <tr>
+                    <th class="text-center white bg-indigo-500">
+                        TIPO
+                    </th>
+                    <th class="text-center white bg-indigo-500">
+                        NOMBRE DE SERVICIO
+                    </th>
+                    {% for i in 1..bitacora.datafills.max_idus %}
+                    <th class="text-center white bg-indigo-500">
+                        IDU {{ i }}
+                    </th>
+                    <th class="text-center white bg-indigo-500">
+                        PORTS {{ i }}
+                    </th>
+                    {% endfor %}
+                    <th class="text-center white bg-indigo-500">
+                        IP MW Gestion / Port
+                    </th>
+                    <th class="text-center white bg-indigo-500">
+                        IP Gateway / Mask
+                    </th>
+                    <th class="text-center white bg-indigo-500">
+                        PE RAN PORT
+                    </th>
+                    <th class="text-center white bg-indigo-500">
+                        NOMBRE DEL SITE
+                    </th>
+                    <th class="text-center white bg-indigo-500">
+                        NOMBRE DEL PE
+                    </th>
+                    {{ bitacora.datafills.ip_headers|raw }}
+                </tr>
+                </thead>
+                <tbody>
+                {% for datafill in bitacora.datafills.data %}
+                <tr>
+                    <td class="text-center">
+                        {{ datafill.SERVICIO_TIPO }}
+                    </td>
+                    <td>
+                        {{ datafill.SERVICIO_NOMBRE }}
+                    </td>
+                    {% for step in datafill.idus %}
+                    <td>
+                        {{ step.IDU }}
+                    </td>
+                    <td class="text-center">
+                        {{ step.PORT_IN }} / {{ step.PORT_OUT }}
+                    </td>
+                    {% endfor %}
+                    {% if (bitacora.datafills.max_idus - datafill.idus|length) > 0 %}
+                        {% for step_blank in 1..(bitacora.datafills.max_idus - datafill.idus|length) %}
+                        <td></td><td></td>
+                        {% endfor %}
+                    {% endif %}
+                    <td class="text-center">
+                        {{ datafill.DETALLE1 }}
+                    </td>
+                    <td class="text-center">
+                        {{ datafill.DETALLE2 }}
+                    </td>
+                    <td>
+                        {{ datafill.PERAN_DEVICE }} {{ datafill.PERAN_PORT }}
+                    </td>
+                    <td>
+                        {{ datafill.SITE_NOMBRE }}
+                    </td>
+                    <td>
+                        {{ datafill.PERAN_NOMBRE }}
+                    </td>
+                    {% if (datafill.recursos_ip|length) > 0 %}
+                        {% for recurso in datafill.recursos_ip %}
+
+                            <td>{{ recurso }}</td>
+                        {% endfor %}
+                    {% else %}
+                        {% for recurso in 1..29 %}
+                            <td></td>
+                        {% endfor %}
+                    {% endif %}
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+            {% endif %}
+            {% if bitacora.servicios.ot_able == "ok" %}
+            <div class="ribbon ribbon-reverse ribbon-clip ribbon-info" data-target="#modal-validar" data-toggle="modal">
+                <span class="ribbon-inner" style="cursor: pointer;">Descargar Excel</span>
+            </div>
+            {% elseif bitacora.datafills.data|length == 0 %}
+                <p class="text-center">Esta solicitud no cuenta con datafill alguno.</p>
+            {% endif %}
+        </div>
+    </div>
+</div>

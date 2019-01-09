@@ -1,0 +1,2700 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>KMZ Clientes Nov 2018.kml</name>
+	<visibility>0</visibility>
+	<Style id="sitestile21">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="linkstile13">
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sitestile43">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile13">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="linkstile19">
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sitestile42">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="linkstile29">
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sitestile32">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile57">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile11">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="linkstile18">
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="linkstile22">
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="linkstile33">
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sitestile50">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="linkstile10">
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sitestile71">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile31">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile19">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="linkstile32">
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="linkstile11">
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sitestile27">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile65">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile56">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile69">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile9">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="linkstile31">
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sitestile53">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile59">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="linkstile2">
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sitestile15">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile44">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile10">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile34">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile5">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile6">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="linkstile15">
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sitestile48">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile55">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="linkstile17">
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sitestile8">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile28">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="linkstile14">
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sitestile35">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="linkstile16">
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sitestile17">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile25">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile37">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile12">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile54">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile1">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile38">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="linkstile28">
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sitestile14">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="linkstile34">
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="linkstile8">
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sitestile67">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile7">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="linkstile5">
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sitestile22">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile61">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile39">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="linkstile6">
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="linkstile21">
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sitestile58">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="linkstile1">
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sitestile51">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="linkstile4">
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sitestile66">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile40">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="linkstile23">
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sitestile64">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile70">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile26">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile3">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="linkstile12">
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sitestile4">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="linkstile35">
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sitestile16">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="linkstile7">
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="linkstile3">
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="linkstile9">
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sitestile24">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="linkstile36">
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sitestile68">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="linkstile20">
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sitestile45">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile23">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile33">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile72">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile29">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile63">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile2">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile46">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="linkstile24">
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="linkstile30">
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sitestile60">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="linkstile26">
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sitestile30">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile49">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile20">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="linkstile27">
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sitestile62">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile41">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile47">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="linkstile25">
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sitestile52">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile18">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile36">
+		<IconStyle>
+			<color>ff40ff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Folder>
+		<name>Links</name>
+		<visibility>0</visibility>
+		<Style id="linkstile36">
+			<LineStyle>
+				<color>ffffff00</color>
+				<width>2</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>30ffff00</color>
+			</PolyStyle>
+		</Style>
+		<Placemark>
+			<name>Link from 82063_LM_Cliente_Everis to 0100119_LM_Estadio_Alianza</name>
+			<visibility>0</visibility>
+			<description>82063_LM_Cliente_Everis:
+
+0100119_LM_Estadio_Alianza:</description>
+			<styleUrl>#linkstile1</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-77.02680599999999,-12.080444,0 -77.021835,-12.068927,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 83133_LM_Cliente_Willax to 0100201_LM_Mega_Plaza</name>
+			<visibility>0</visibility>
+			<description>83133_LM_Cliente_Willax:
+
+0100201_LM_Mega_Plaza:</description>
+			<styleUrl>#linkstile2</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-77.06083099999999,-12.006231,0 -77.059814,-11.996965,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 83134_LM_Cliente_Mina_Condestable to 0102671_LM_Mina_Condestable</name>
+			<visibility>0</visibility>
+			<description>83134_LM_Cliente_Mina_Condestable:
+
+0102671_LM_Mina_Condestable:</description>
+			<styleUrl>#linkstile3</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-76.59263900000001,-12.693611,0 -76.58886099999999,-12.695889,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 83136_LM_Cliente_Level3_Chancay to 0100376_LM_Chancay</name>
+			<visibility>0</visibility>
+			<description>83136_LM_Cliente_Level3_Chancay:
+
+0100376_LM_Chancay:</description>
+			<styleUrl>#linkstile4</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-77.267,-11.578553,0 -77.26506000000001,-11.583503,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 83109_AQ_Cliente_Level3_Atico to 0100930_AQ_Atico</name>
+			<visibility>0</visibility>
+			<description>83109_AQ_Cliente_Level3_Atico:
+
+0100930_AQ_Atico:</description>
+			<styleUrl>#linkstile5</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-73.695064,-16.229278,0 -73.69431299999999,-16.2274,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 83110_PI_Cliente_Level3_Bayovar to 0101727_PI_Copeinca</name>
+			<visibility>0</visibility>
+			<description>83110_PI_Cliente_Level3_Bayovar:
+
+0101727_PI_Copeinca:</description>
+			<styleUrl>#linkstile6</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-81.032861,-5.823472000000001,0 -81.03394299999999,-5.826889,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 83111_LM_Cliente_Level3_Canete to 0100398_LM_Canete</name>
+			<visibility>0</visibility>
+			<description>83111_LM_Cliente_Level3_Canete:
+
+0100398_LM_Canete:</description>
+			<styleUrl>#linkstile7</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-76.397019,-13.092294,0 -76.380447,-13.070655,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 83113_AQ_Cliente_Level3_Matarani to 0100916_AQ_Mollendo</name>
+			<visibility>0</visibility>
+			<description>83113_AQ_Cliente_Level3_Matarani:
+
+0100916_AQ_Mollendo:</description>
+			<styleUrl>#linkstile8</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-72.03489999999999,-17.00564,0 -72.02253,-17.017153,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 83117_JU_Cliente_Level3_Huancayo to 0101601_JU_Huancayo_Centro</name>
+			<visibility>0</visibility>
+			<description>83117_JU_Cliente_Level3_Huancayo:
+
+0101601_JU_Huancayo_Centro:</description>
+			<styleUrl>#linkstile9</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-75.219486,-12.066758,0 -75.210556,-12.069083,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 1883208_LI_SAGA_58 to 0100612_LI_La_Esperanza</name>
+			<visibility>0</visibility>
+			<description>1883208_LI_SAGA_58:
+
+0100612_LI_La_Esperanza:</description>
+			<styleUrl>#linkstile10</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-79.043661,-8.086375,0 -79.04637099999999,-8.079599999999999,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 1883205_PI_SAGA_59 to 0103148_PI_Chulucanas_Ciudad</name>
+			<visibility>0</visibility>
+			<description>1883205_PI_SAGA_59:
+
+0103148_PI_Chulucanas_Ciudad:</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-80.16783100000001,-5.101331,0 -80.160698,-5.09835,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 1883163_LI_SAGA_55 to 0100615_LI_Pacasmayo</name>
+			<visibility>0</visibility>
+			<description>1883163_LI_SAGA_55:
+
+0100615_LI_Pacasmayo:</description>
+			<styleUrl>#linkstile12</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-79.56703899999999,-7.399367,0 -79.553291,-7.384324000000001,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 1883156_LA_SAGA_37 to 0101008_LA_Moshoqueque</name>
+			<visibility>0</visibility>
+			<description>1883156_LA_SAGA_37:
+
+0101008_LA_Moshoqueque:</description>
+			<styleUrl>#linkstile13</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-79.851433,-6.764221999999999,0 -79.845871,-6.753186,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 1883155_LI_SAGA_46 to 0100616_LI_Chepen</name>
+			<visibility>0</visibility>
+			<description>1883155_LI_SAGA_46:
+
+0100616_LI_Chepen:</description>
+			<styleUrl>#linkstile14</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-79.438531,-7.221586,0 -79.441307,-7.223258999999999,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 1883246_LM_PACA_1 to 0100585_LM_Pacaran</name>
+			<visibility>0</visibility>
+			<description>1883246_LM_PACA_1:
+
+0100585_LM_Pacaran:</description>
+			<styleUrl>#linkstile15</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-76.089133,-12.898392,0 -76.07044000000001,-12.868884,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 1883219_LM_SAGA_72 to 0100312_LM_Huaycan</name>
+			<visibility>0</visibility>
+			<description>1883219_LM_SAGA_72:
+
+0100312_LM_Huaycan:</description>
+			<styleUrl>#linkstile16</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-76.8305,-12.006861,0 -76.837341,-12.002591,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 1883212_LM_SAGA_65 to 0105545_LM_Techo_Propio</name>
+			<visibility>0</visibility>
+			<description>1883212_LM_SAGA_65:
+
+0105545_LM_Techo_Propio:</description>
+			<styleUrl>#linkstile17</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-76.973466,-12.023984,0 -76.97571600000001,-12.023448,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 1883217_LM_SAGA_67 to 0100544_LM_Repetidor_Morro</name>
+			<visibility>0</visibility>
+			<description>1883217_LM_SAGA_67:
+
+0100544_LM_Repetidor_Morro:</description>
+			<styleUrl>#linkstile18</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-77.018486,-12.175342,0 -77.02939600000001,-12.182817,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 82026_PI_TP_PIURA to 0101771_PI_Ovalo_Bolognesi</name>
+			<visibility>0</visibility>
+			<description>82026_PI_TP_PIURA:
+
+0101771_PI_Ovalo_Bolognesi:</description>
+			<styleUrl>#linkstile19</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-80.629408,-5.195944,0 -80.63030000000001,-5.19849,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 1883151_LM_SAGA_53 to 0100386_LM_Huaura</name>
+			<visibility>0</visibility>
+			<description>1883151_LM_SAGA_53:
+
+0100386_LM_Huaura:</description>
+			<styleUrl>#linkstile20</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-77.595794,-11.08555,0 -77.59938800000001,-11.08501,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 1883191_PI_SAGA_27 to 0103100_PI_San_Martin_Piura</name>
+			<visibility>0</visibility>
+			<description>1883191_PI_SAGA_27:
+
+0103100_PI_San_Martin_Piura:</description>
+			<styleUrl>#linkstile21</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-80.66476400000001,-5.178022,0 -80.66902,-5.17632,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 1883159_CS_SAGA_39 to 0101324_CS_Instituto_Tupac_Amaru</name>
+			<visibility>0</visibility>
+			<description>1883159_CS_SAGA_39:
+
+0101324_CS_Instituto_Tupac_Amaru:</description>
+			<styleUrl>#linkstile22</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-71.932722,-13.529138,0 -71.932045,-13.530438,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 1883210_LM_SAGA_34 to 0106227_LM_Makara_Huaral</name>
+			<visibility>0</visibility>
+			<description>1883210_LM_SAGA_34:
+
+0106227_LM_Makara_Huaral:</description>
+			<styleUrl>#linkstile23</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-77.225275,-11.502486,0 -77.22669999999999,-11.501,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 1883214_LM_SAGA_66 to 0105536_LM_Ruibardos</name>
+			<visibility>0</visibility>
+			<description>1883214_LM_SAGA_66:
+
+0105536_LM_Ruibardos:</description>
+			<styleUrl>#linkstile24</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-77.005511,-12.013647,0 -77.003304,-12.0135,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 1883221_LM_SAGA_69 to 0100033_LM_San_Juan_de_Mirafl</name>
+			<visibility>0</visibility>
+			<description>1883221_LM_SAGA_69:
+
+0100033_LM_San_Juan_de_Mirafl:</description>
+			<styleUrl>#linkstile25</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-76.98902800000001,-12.159025,0 -76.97663900000001,-12.158485,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 1883220_LM_SAGA_68 to 0105057_LM_Tren_De_Villa</name>
+			<visibility>0</visibility>
+			<description>1883220_LM_SAGA_68:
+
+0105057_LM_Tren_De_Villa:</description>
+			<styleUrl>#linkstile26</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-76.928061,-12.204314,0 -76.93382,-12.20592,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 1883170_LM_SAGA_70 to 0100374_LM_Zapallal</name>
+			<visibility>0</visibility>
+			<description>1883170_LM_SAGA_70:
+
+0100374_LM_Zapallal:</description>
+			<styleUrl>#linkstile27</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-77.114589,-11.831897,0 -77.117813,-11.824639,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 1883231_LM_SAGA_71 to 0100099_LM_5_Esquinas</name>
+			<visibility>0</visibility>
+			<description>1883231_LM_SAGA_71:
+
+0100099_LM_5_Esquinas:</description>
+			<styleUrl>#linkstile28</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-77.01861700000001,-12.054353,0 -77.01308400000001,-12.050642,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 1883234_LM_SAGA_73 to 0100151_LM_Rosales_Diesel</name>
+			<visibility>0</visibility>
+			<description>1883234_LM_SAGA_73:
+
+0100151_LM_Rosales_Diesel:</description>
+			<styleUrl>#linkstile29</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-76.971277,-12.057152,0 -76.970024,-12.057815,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 1883222_LM_SAGA_63 to 0100206_LM_Enapu</name>
+			<visibility>0</visibility>
+			<description>1883222_LM_SAGA_63:
+
+0100206_LM_Enapu:</description>
+			<styleUrl>#linkstile30</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-77.141983,-12.0602,0 -77.14252500000001,-12.057907,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 1883196_LM_SAGA_36 to 0100464_LM_Malecon_Huacho</name>
+			<visibility>0</visibility>
+			<description>1883196_LM_SAGA_36:
+
+0100464_LM_Malecon_Huacho:</description>
+			<styleUrl>#linkstile31</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-77.61347499999999,-11.107694,0 -77.611847,-11.107678,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 1883228_LM_SAGA_79 to 0105761_LM_Sotomayor</name>
+			<visibility>0</visibility>
+			<description>1883228_LM_SAGA_79:
+
+0105761_LM_Sotomayor:</description>
+			<styleUrl>#linkstile32</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-77.01656,-12.054533,0 -77.01419,-12.05255,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 1883213_LM_SAGA_64 to 0100285_LM_Puente_Piedra</name>
+			<visibility>0</visibility>
+			<description>1883213_LM_SAGA_64:
+
+0100285_LM_Puente_Piedra:</description>
+			<styleUrl>#linkstile33</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-77.0733,-11.868583,0 -77.074051,-11.864586,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 1883206_IC_SAGA_56 to 0100821_IC_Ayabaca</name>
+			<visibility>0</visibility>
+			<description>1883206_IC_SAGA_56:
+
+0100821_IC_Ayabaca:</description>
+			<styleUrl>#linkstile34</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-75.74420000000001,-14.056867,0 -75.73305499999999,-14.070599,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 1883165_IC_SAGA_35 to 0100824_IC_Pisco_Centro</name>
+			<visibility>0</visibility>
+			<description>1883165_IC_SAGA_35:
+
+0100824_IC_Pisco_Centro:</description>
+			<styleUrl>#linkstile35</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-76.20440000000001,-13.716143,0 -76.202591,-13.708293,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 1883158_IC_SAGA_43 to 0100815_IC_Chincha</name>
+			<visibility>0</visibility>
+			<description>1883158_IC_SAGA_43:
+
+0100815_IC_Chincha:</description>
+			<styleUrl>#linkstile36</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-76.129333,-13.413933,0 -76.13413199999999,-13.426594,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Sites</name>
+		<visibility>0</visibility>
+		<Style id="sitestile72">
+			<IconStyle>
+				<color>ff40ff00</color>
+				<Icon>
+					<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+				</Icon>
+			</IconStyle>
+			<LineStyle>
+				<color>ff40ff00</color>
+				<width>2</width>
+			</LineStyle>
+		</Style>
+		<Placemark>
+			<name>82063_LM_Cliente_Everis</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.080444
+Lng: -77.026806
+Tower Type: unknown</description>
+			<styleUrl>#sitestile1</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.02680599999999,-12.080444,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100119_LM_Estadio_Alianza</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.068927
+Lng: -77.021835
+Tower Type: unknown</description>
+			<styleUrl>#sitestile2</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.021835,-12.068927,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>83133_LM_Cliente_Willax</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.006231
+Lng: -77.060831
+Tower Type: unknown</description>
+			<styleUrl>#sitestile3</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.06083099999999,-12.006231,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100201_LM_Mega_Plaza</name>
+			<visibility>0</visibility>
+			<description>Lat: -11.996965
+Lng: -77.059814
+Tower Type: unknown</description>
+			<styleUrl>#sitestile4</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.059814,-11.996965,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>83134_LM_Cliente_Mina_Condestable</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.693611
+Lng: -76.592639
+Tower Type: unknown</description>
+			<styleUrl>#sitestile5</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-76.59263900000001,-12.693611,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0102671_LM_Mina_Condestable</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.695889
+Lng: -76.588861
+Tower Type: unknown</description>
+			<styleUrl>#sitestile6</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-76.58886099999999,-12.695889,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>83136_LM_Cliente_Level3_Chancay</name>
+			<visibility>0</visibility>
+			<description>Lat: -11.578553
+Lng: -77.267000
+Tower Type: unknown</description>
+			<styleUrl>#sitestile7</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.267,-11.578553,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100376_LM_Chancay</name>
+			<visibility>0</visibility>
+			<description>Lat: -11.583503
+Lng: -77.265060
+Tower Type: unknown</description>
+			<styleUrl>#sitestile8</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.26506000000001,-11.583503,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>83109_AQ_Cliente_Level3_Atico</name>
+			<visibility>0</visibility>
+			<description>Lat: -16.229278
+Lng: -73.695064
+Tower Type: unknown</description>
+			<styleUrl>#sitestile9</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-73.695064,-16.229278,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100930_AQ_Atico</name>
+			<visibility>0</visibility>
+			<description>Lat: -16.227400
+Lng: -73.694313
+Tower Type: unknown</description>
+			<styleUrl>#sitestile10</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-73.69431299999999,-16.2274,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>83110_PI_Cliente_Level3_Bayovar</name>
+			<visibility>0</visibility>
+			<description>Lat: -5.823472
+Lng: -81.032861
+Tower Type: unknown</description>
+			<styleUrl>#sitestile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-81.032861,-5.823472000000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0101727_PI_Copeinca</name>
+			<visibility>0</visibility>
+			<description>Lat: -5.826889
+Lng: -81.033943
+Tower Type: unknown</description>
+			<styleUrl>#sitestile12</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-81.03394299999999,-5.826889,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>83111_LM_Cliente_Level3_Canete</name>
+			<visibility>0</visibility>
+			<description>Lat: -13.092294
+Lng: -76.397019
+Tower Type: unknown</description>
+			<styleUrl>#sitestile13</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-76.397019,-13.092294,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100398_LM_Canete</name>
+			<visibility>0</visibility>
+			<description>Lat: -13.070655
+Lng: -76.380447
+Tower Type: unknown</description>
+			<styleUrl>#sitestile14</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-76.380447,-13.070655,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>83113_AQ_Cliente_Level3_Matarani</name>
+			<visibility>0</visibility>
+			<description>Lat: -17.005640
+Lng: -72.034900
+Tower Type: unknown</description>
+			<styleUrl>#sitestile15</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-72.03489999999999,-17.00564,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100916_AQ_Mollendo</name>
+			<visibility>0</visibility>
+			<description>Lat: -17.017153
+Lng: -72.022530
+Tower Type: unknown</description>
+			<styleUrl>#sitestile16</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-72.02253,-17.017153,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>83117_JU_Cliente_Level3_Huancayo</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.066758
+Lng: -75.219486
+Tower Type: unknown</description>
+			<styleUrl>#sitestile17</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-75.219486,-12.066758,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0101601_JU_Huancayo_Centro</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.069083
+Lng: -75.210556
+Tower Type: unknown</description>
+			<styleUrl>#sitestile18</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-75.210556,-12.069083,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1883208_LI_SAGA_58</name>
+			<visibility>0</visibility>
+			<description>Lat: -8.086375
+Lng: -79.043661
+Tower Type: unknown</description>
+			<styleUrl>#sitestile19</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-79.043661,-8.086375,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100612_LI_La_Esperanza</name>
+			<visibility>0</visibility>
+			<description>Lat: -8.079600
+Lng: -79.046371
+Tower Type: unknown</description>
+			<styleUrl>#sitestile20</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-79.04637099999999,-8.079599999999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1883205_PI_SAGA_59</name>
+			<visibility>0</visibility>
+			<description>Lat: -5.101331
+Lng: -80.167831
+Tower Type: unknown</description>
+			<styleUrl>#sitestile21</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-80.16783100000001,-5.101331,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0103148_PI_Chulucanas_Ciudad</name>
+			<visibility>0</visibility>
+			<description>Lat: -5.098350
+Lng: -80.160698
+Tower Type: unknown</description>
+			<styleUrl>#sitestile22</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-80.160698,-5.09835,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1883163_LI_SAGA_55</name>
+			<visibility>0</visibility>
+			<description>Lat: -7.399367
+Lng: -79.567039
+Tower Type: unknown</description>
+			<styleUrl>#sitestile23</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-79.56703899999999,-7.399367,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100615_LI_Pacasmayo</name>
+			<visibility>0</visibility>
+			<description>Lat: -7.384324
+Lng: -79.553291
+Tower Type: unknown</description>
+			<styleUrl>#sitestile24</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-79.553291,-7.384324000000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1883156_LA_SAGA_37</name>
+			<visibility>0</visibility>
+			<description>Lat: -6.764222
+Lng: -79.851433
+Tower Type: unknown</description>
+			<styleUrl>#sitestile25</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-79.851433,-6.764221999999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0101008_LA_Moshoqueque</name>
+			<visibility>0</visibility>
+			<description>Lat: -6.753186
+Lng: -79.845871
+Tower Type: unknown</description>
+			<styleUrl>#sitestile26</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-79.845871,-6.753186,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1883155_LI_SAGA_46</name>
+			<visibility>0</visibility>
+			<description>Lat: -7.221586
+Lng: -79.438531
+Tower Type: unknown</description>
+			<styleUrl>#sitestile27</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-79.438531,-7.221586,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100616_LI_Chepen</name>
+			<visibility>0</visibility>
+			<description>Lat: -7.223259
+Lng: -79.441307
+Tower Type: unknown</description>
+			<styleUrl>#sitestile28</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-79.441307,-7.223258999999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1883246_LM_PACA_1</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.898392
+Lng: -76.089133
+Tower Type: unknown</description>
+			<styleUrl>#sitestile29</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-76.089133,-12.898392,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100585_LM_Pacaran</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.868884
+Lng: -76.070440
+Tower Type: unknown</description>
+			<styleUrl>#sitestile30</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-76.07044000000001,-12.868884,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1883219_LM_SAGA_72</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.006861
+Lng: -76.830500
+Tower Type: unknown</description>
+			<styleUrl>#sitestile31</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-76.8305,-12.006861,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100312_LM_Huaycan</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.002591
+Lng: -76.837341
+Tower Type: unknown</description>
+			<styleUrl>#sitestile32</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-76.837341,-12.002591,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1883212_LM_SAGA_65</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.023984
+Lng: -76.973466
+Tower Type: unknown</description>
+			<styleUrl>#sitestile33</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-76.973466,-12.023984,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0105545_LM_Techo_Propio</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.023448
+Lng: -76.975716
+Tower Type: unknown</description>
+			<styleUrl>#sitestile34</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-76.97571600000001,-12.023448,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1883217_LM_SAGA_67</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.175342
+Lng: -77.018486
+Tower Type: unknown</description>
+			<styleUrl>#sitestile35</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.018486,-12.175342,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100544_LM_Repetidor_Morro</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.182817
+Lng: -77.029396
+Tower Type: unknown</description>
+			<styleUrl>#sitestile36</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.02939600000001,-12.182817,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>82026_PI_TP_PIURA</name>
+			<visibility>0</visibility>
+			<description>Lat: -5.195944
+Lng: -80.629408
+Tower Type: unknown</description>
+			<styleUrl>#sitestile37</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-80.629408,-5.195944,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0101771_PI_Ovalo_Bolognesi</name>
+			<visibility>0</visibility>
+			<description>Lat: -5.198490
+Lng: -80.630300
+Tower Type: unknown</description>
+			<styleUrl>#sitestile38</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-80.63030000000001,-5.19849,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1883151_LM_SAGA_53</name>
+			<visibility>0</visibility>
+			<description>Lat: -11.085550
+Lng: -77.595794
+Tower Type: unknown</description>
+			<styleUrl>#sitestile39</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.595794,-11.08555,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100386_LM_Huaura</name>
+			<visibility>0</visibility>
+			<description>Lat: -11.085010
+Lng: -77.599388
+Tower Type: unknown</description>
+			<styleUrl>#sitestile40</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.59938800000001,-11.08501,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1883191_PI_SAGA_27</name>
+			<visibility>0</visibility>
+			<description>Lat: -5.178022
+Lng: -80.664764
+Tower Type: unknown</description>
+			<styleUrl>#sitestile41</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-80.66476400000001,-5.178022,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0103100_PI_San_Martin_Piura</name>
+			<visibility>0</visibility>
+			<description>Lat: -5.176320
+Lng: -80.669020
+Tower Type: unknown</description>
+			<styleUrl>#sitestile42</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-80.66902,-5.17632,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1883159_CS_SAGA_39</name>
+			<visibility>0</visibility>
+			<description>Lat: -13.529138
+Lng: -71.932722
+Tower Type: unknown</description>
+			<styleUrl>#sitestile43</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-71.932722,-13.529138,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0101324_CS_Instituto_Tupac_Amaru</name>
+			<visibility>0</visibility>
+			<description>Lat: -13.530438
+Lng: -71.932045
+Tower Type: unknown</description>
+			<styleUrl>#sitestile44</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-71.932045,-13.530438,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1883210_LM_SAGA_34</name>
+			<visibility>0</visibility>
+			<description>Lat: -11.502486
+Lng: -77.225275
+Tower Type: unknown</description>
+			<styleUrl>#sitestile45</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.225275,-11.502486,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0106227_LM_Makara_Huaral</name>
+			<visibility>0</visibility>
+			<description>Lat: -11.501000
+Lng: -77.226700
+Tower Type: unknown</description>
+			<styleUrl>#sitestile46</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.22669999999999,-11.501,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1883214_LM_SAGA_66</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.013647
+Lng: -77.005511
+Tower Type: unknown</description>
+			<styleUrl>#sitestile47</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.005511,-12.013647,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0105536_LM_Ruibardos</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.013500
+Lng: -77.003304
+Tower Type: unknown</description>
+			<styleUrl>#sitestile48</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.003304,-12.0135,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1883221_LM_SAGA_69</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.159025
+Lng: -76.989028
+Tower Type: unknown</description>
+			<styleUrl>#sitestile49</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-76.98902800000001,-12.159025,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100033_LM_San_Juan_de_Mirafl</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.158485
+Lng: -76.976639
+Tower Type: unknown</description>
+			<styleUrl>#sitestile50</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-76.97663900000001,-12.158485,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1883220_LM_SAGA_68</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.204314
+Lng: -76.928061
+Tower Type: unknown</description>
+			<styleUrl>#sitestile51</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-76.928061,-12.204314,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0105057_LM_Tren_De_Villa</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.205920
+Lng: -76.933820
+Tower Type: unknown</description>
+			<styleUrl>#sitestile52</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-76.93382,-12.20592,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1883170_LM_SAGA_70</name>
+			<visibility>0</visibility>
+			<description>Lat: -11.831897
+Lng: -77.114589
+Tower Type: unknown</description>
+			<styleUrl>#sitestile53</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.114589,-11.831897,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100374_LM_Zapallal</name>
+			<visibility>0</visibility>
+			<description>Lat: -11.824639
+Lng: -77.117813
+Tower Type: unknown</description>
+			<styleUrl>#sitestile54</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.117813,-11.824639,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1883231_LM_SAGA_71</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.054353
+Lng: -77.018617
+Tower Type: unknown</description>
+			<styleUrl>#sitestile55</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.01861700000001,-12.054353,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100099_LM_5_Esquinas</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.050642
+Lng: -77.013084
+Tower Type: unknown</description>
+			<styleUrl>#sitestile56</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.01308400000001,-12.050642,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1883234_LM_SAGA_73</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.057152
+Lng: -76.971277
+Tower Type: unknown</description>
+			<styleUrl>#sitestile57</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-76.971277,-12.057152,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100151_LM_Rosales_Diesel</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.057815
+Lng: -76.970024
+Tower Type: unknown</description>
+			<styleUrl>#sitestile58</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-76.970024,-12.057815,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1883222_LM_SAGA_63</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.060200
+Lng: -77.141983
+Tower Type: unknown</description>
+			<styleUrl>#sitestile59</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.141983,-12.0602,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100206_LM_Enapu</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.057907
+Lng: -77.142525
+Tower Type: unknown</description>
+			<styleUrl>#sitestile60</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.14252500000001,-12.057907,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1883196_LM_SAGA_36</name>
+			<visibility>0</visibility>
+			<description>Lat: -11.107694
+Lng: -77.613475
+Tower Type: unknown</description>
+			<styleUrl>#sitestile61</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.61347499999999,-11.107694,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100464_LM_Malecon_Huacho</name>
+			<visibility>0</visibility>
+			<description>Lat: -11.107678
+Lng: -77.611847
+Tower Type: unknown</description>
+			<styleUrl>#sitestile62</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.611847,-11.107678,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1883228_LM_SAGA_79</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.054533
+Lng: -77.016560
+Tower Type: unknown</description>
+			<styleUrl>#sitestile63</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.01656,-12.054533,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0105761_LM_Sotomayor</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.052550
+Lng: -77.014190
+Tower Type: unknown</description>
+			<styleUrl>#sitestile64</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.01419,-12.05255,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1883213_LM_SAGA_64</name>
+			<visibility>0</visibility>
+			<description>Lat: -11.868583
+Lng: -77.073300
+Tower Type: unknown</description>
+			<styleUrl>#sitestile65</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.0733,-11.868583,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100285_LM_Puente_Piedra</name>
+			<visibility>0</visibility>
+			<description>Lat: -11.864586
+Lng: -77.074051
+Tower Type: unknown</description>
+			<styleUrl>#sitestile66</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.074051,-11.864586,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1883206_IC_SAGA_56</name>
+			<visibility>0</visibility>
+			<description>Lat: -14.056867
+Lng: -75.744200
+Tower Type: unknown</description>
+			<styleUrl>#sitestile67</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-75.74420000000001,-14.056867,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100821_IC_Ayabaca</name>
+			<visibility>0</visibility>
+			<description>Lat: -14.070599
+Lng: -75.733055
+Tower Type: unknown</description>
+			<styleUrl>#sitestile68</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-75.73305499999999,-14.070599,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1883165_IC_SAGA_35</name>
+			<visibility>0</visibility>
+			<description>Lat: -13.716143
+Lng: -76.204400
+Tower Type: unknown</description>
+			<styleUrl>#sitestile69</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-76.20440000000001,-13.716143,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100824_IC_Pisco_Centro</name>
+			<visibility>0</visibility>
+			<description>Lat: -13.708293
+Lng: -76.202591
+Tower Type: unknown</description>
+			<styleUrl>#sitestile70</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-76.202591,-13.708293,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1883158_IC_SAGA_43</name>
+			<visibility>0</visibility>
+			<description>Lat: -13.413933
+Lng: -76.129333
+Tower Type: unknown</description>
+			<styleUrl>#sitestile71</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-76.129333,-13.413933,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100815_IC_Chincha</name>
+			<visibility>0</visibility>
+			<description>Lat: -13.426594
+Lng: -76.134132
+Tower Type: unknown</description>
+			<styleUrl>#sitestile72</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-76.13413199999999,-13.426594,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

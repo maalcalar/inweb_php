@@ -1,0 +1,461 @@
+{% extends "base/web.twig" %}
+
+{% set page_title = "Datafill Solicitudes" %}
+
+{% block plugin_stylesheets %}
+    <link rel="stylesheet" href="{{ TwigFunctions('app_root') }}resources/views/vendor/datatables.net-bs4/dataTables.bootstrap4.min.css">
+{% endblock %}
+
+{% block page_content %}
+    <div class="page">
+        <div class="page-header">
+            <h1 class="page-title">Solicitudes de Datafill</h1>
+            <p class="page-description">
+                Administrador:
+                <a href="mailto:gustavo.calvo@entel.pe?Subject=Feedback Solicitudes de Datafill" target="_top">
+                    Gustavo Calvo
+                </a>
+            </p>
+            <div class="page-header-actions">
+                <div class="btn-group btn-group-sm" aria-label="Page Header Actions" role="group">
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-agregar-datafill-solicitud">
+                        <i class="icon md-plus" aria-hidden="true"></i>
+                        <span class="hidden-sm-down">Solicitar Datafill</span>
+                    </button>
+                    <!--
+                    <button type="button" class="btn btn-primary">
+                        <i class="icon md-refresh" aria-hidden="true"></i>
+                        <span class="hidden-sm-down">Actualizar</span>
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                        <i class="icon md-download" aria-hidden="true"></i>
+                        <span class="hidden-sm-down">Exportar</span>
+                    </button>
+                    -->
+                </div>
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="panel panel-primary panel-line">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Solicitudes</h3>
+                </div>
+                <div class="panel-body">
+                    <table id="table-datafill-solicitudes" class="table table-bordered table-striped w-full text-nowrap table-sm">
+                        <thead>
+                            <tr class="text-center bg-light-blue-600">
+                                <th></th>
+                                <th class="white">ID</th>
+                                <th class="white">Proyecto</th>
+                                <th class="white">NE</th>
+                                <th class="white">FE</th>
+                                <th class="white">Solicitante</th>
+                                <th class="white">Fecha</th>
+                                <th class="white">Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {% for solicitud in solicitudes %}
+                            <tr>
+                                <td>
+                                    <button class="btn btn-xs btn-icon btn-pure btn-primary button-solicitud-detalles" style="padding: .120rem !important" data-id="{{ solicitud.SOLICITUD_ID }}"><i class="mx-0 icon fa-cogs"></i></button>
+                                </td>
+                                <td class="text-strong">{{ solicitud.SOLICITUD_ID }}</td>
+                                <td>{{ solicitud.PROYECTO }}</td>
+                                <td>{{ solicitud.NE }}</td>
+                                <td>{{ solicitud.FE }}</td>
+                                <td>{{ solicitud.SOLICITANTE }}</td>
+                                <td>{{ solicitud.FECHA }}</td>
+                                <td class="text-center">
+                                    {% if solicitud.ESTADO == "SIN ATENDER" %}
+                                        <span class="badge badge-dark w-full">sin atender</span>
+                                    {% elseif solicitud.ESTADO == "ATENDIDO POR ING. TX" %}
+                                        <span class="badge badge-primary w-full">ing. tx</span>
+                                    {% elseif solicitud.ESTADO == "ATENDIDO POR OYM" %}
+                                        <span class="badge badge-danger w-full">oym</span>
+                                    {% elseif solicitud.ESTADO == "TERMINADO" %}
+                                        <span class="badge badge-success w-full">terminado</span>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                        <tfoot>
+                            <tr class="text-center">
+                                <th></th>
+                                <th><input type="text" class="form-control form-control-sm" placeholder="ID"></th>
+                                <th><input type="text" class="form-control form-control-sm" placeholder="Proyecto"></th>
+                                <th><input type="text" class="form-control form-control-sm" placeholder="NE"></th>
+                                <th><input type="text" class="form-control form-control-sm" placeholder="FE"></th>
+                                <th><input type="text" class="form-control form-control-sm" placeholder="Solicitante"></th>
+                                <th><input type="text" class="form-control form-control-sm" placeholder="Fecha"></th>
+                                <th>
+                                    <select class="form-control form-control-sm">
+                                        <option value="">
+                                            Estado
+                                        </option>
+                                    </select>
+                                </th>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                </div>
+            </div>
+            <div class="panel panel-bordered" id="bitacora" data-id="0" tabindex="1">
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block page_extra_content %}
+    <div class="modal fade modal-primary" id="modal-agregar-datafill-solicitud" aria-hidden="false" aria-labelledby="modal-agregar-datafill-solicitud" role="dialog" tabindex="-1">
+        <div class="modal-dialog">
+            <form class="modal-content" action="" method="POST" id="form-agregar-datafill-solicitud" autocomplete="off">
+                <div class="modal-header">
+                    <button type="button" class="close pt-0" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        ×
+                    </span>
+                    </button>
+                    <h4 class="modal-title">
+                        Generar Solicitud de Datafill
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xl-8 col-sm-12 form-group">
+                            <div class="input-group">
+                            <span class="input-group-addon w-100">
+                                Proyecto
+                            </span>
+                                <select class="form-control" name="agregar[proyecto]" required>
+                                    <option value="">
+                                        Seleccionar Proyecto
+                                    </option>
+                                    <option>
+                                        ANILLOS METROPOLITANOS
+                                    </option>
+                                    <option>
+                                        AUMENTO DE CAPACIDAD
+                                    </option>
+                                    <option>
+                                        BAFI
+                                    </option>
+                                    <option>
+                                        CALIDAD
+                                    </option>
+                                    <option>
+                                        EASY MACRO
+                                    </option>
+                                    <option>
+                                        EVENTOS
+                                    </option>
+                                    <option>
+                                        INBUILDING
+                                    </option>
+                                    <option>
+                                        INDOOR
+                                    </option>
+                                    <option>
+                                        MAYORISTAS
+                                    </option>
+                                    <option>
+                                        MICRO CELDAS
+                                    </option>
+                                    <option>
+                                        REUBICACIONES
+                                    </option>
+                                    <option>
+                                        ROLLOUT
+                                    </option>
+                                    <option>
+                                        SWAP
+                                    </option>
+                                    <option>
+                                        OBSOLESCENCIA
+                                    </option>
+                                    <option>
+                                        WIMAX
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-12 form-group">
+                            <div class="input-group">
+                            <span class="input-group-addon w-100">
+                                Week
+                            </span>
+                                <input type="number" min="1" max="50" class="form-control" name="agregar[week]" placeholder="#" required/>
+                            </div>
+                        </div>
+                        <div class="col-xl-12 col-sm-12 form-group">
+                            <div class="input-group">
+                            <span class="input-group-addon w-100">
+                                Site NE
+                            </span>
+                                <input type="text" class="form-control" name="agregar[ne]" placeholder="XXXXXXX_YY_Nombre_Site_NE" required/>
+                            </div>
+                        </div>
+                        <div class="col-xl-12 col-sm-12 form-group">
+                            <div class="input-group">
+                            <span class="input-group-addon w-100">
+                                Site FE
+                            </span>
+                                <input type="text" class="form-control" name="agregar[fe]" placeholder="XXXXXXX_YY_Nombre_Site_FE" required/>
+                            </div>
+                        </div>
+                        <div class="col-xl-12 col-sm-12 form-group">
+                            <div class="input-group">
+                            <span class="input-group-addon w-100">
+                                Detalles
+                            </span>
+                                <textarea class="form-control" name="agregar[descripcion]" rows="3" placeholder="Describa brevemente el trabajo que se va a realizar para poder generar el Datafill" required></textarea>
+                            </div>
+                        </div>
+                        <div class="col-xl-12 col-sm-12 form-group m-0" id="div-mensaje-agregar-datafill-solicitud">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-pure waves-effect waves-light waves-round" data-dismiss="modal">
+                        Cancelar
+                    </button>
+                    <button type="button" class="btn btn-default btn-pure waves-effect waves-light waves-round">
+                        Limpiar Formulario
+                    </button>
+                    <button type="submit" class="btn btn-default btn-pure text-primary waves-effect waves-light waves-round">
+                        Crear Solicitud
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <div class="modal fade" id="modal-agregar-extra-archivo" aria-hidden="false" aria-labelledby="modal-agregar-extra-archivo" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-simple modal-sidebar">
+            <form class="modal-content border border-success" autocomplete="off" enctype="multipart/form-data" id="form-agregar-extra-archivo">
+                <div class="modal-header">
+                    <button type="button" class="close py-0" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        ×
+                    </span>
+                    </button>
+                    <h4 class="modal-title text-success">
+                        Agregar Información de Solicitud
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <p>Seleccione el archivo a cargar, que contenga información útil para su solicitud.<br>[ El archivo puede ser de cualquier tipo ]</p>
+                    <div id="dropBox-agregar-extra-archivo">
+                        <p>Click para seleccionar el archivo</p>
+                    </div>
+                    <input type="file" name="file-input" id="file-input-agregar-extra-archivo" />
+                    <div class="progress d-none">
+                        <div class="progress-bar progress-bar-striped progress-bar-success" style="width: 0%" role="progressbar" id="progress-agregar-extra-archivo">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-block btn-pure waves-effect waves-classic" data-dismiss="modal">
+                        Cancelar
+                    </button>
+                    <button type="submit" name="agregar" class="btn btn-success btn-block waves-effect waves-classic">
+                        Agregar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
+
+{% block js_plugins %}
+    <script src="{{ TwigFunctions('app_root') }}resources/views/vendor/datatables.net/jquery.dataTables.js"></script>
+    <script src="{{ TwigFunctions('app_root') }}resources/views/vendor/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+{% endblock %}
+
+{% block js_page %}
+    <script src="{{ TwigFunctions('app_root') }}resources/views/js/Plugin/datatables.js"></script>
+    <script>
+        var table_datafill_solicitudes;
+        table_datafill_solicitudes = $('#table-datafill-solicitudes').DataTable({
+            "stateSave": false,
+            "scrollX": true,
+            "scrollCollapse": true,
+            "pagingType": "full_numbers",
+            "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "Todos"]],
+            "ordering": true,
+            "order": [[1,"desc"]],
+            "language": {
+                "search": "",
+                "sSearchPlaceholder": "Buscar...",
+                "infoEmpty": "0 resultados",
+                "sEmptyTable": "No hay información para mostrar",
+                "zeroRecords": "No hay resultados para su búsqueda",
+                "sInfo": "Solicitudes del _START_ al _END_ de _TOTAL_",
+                "infoFiltered": "(de un total de _MAX_ solicitudes)",
+                "lengthMenu": "_MENU_",
+                "loadingRecords": '<div class="loader vertical-align-middle loader-bounce h-50 w-50"></div> Por favor espere, cargando datos...',
+                "processing": '<div class="loader vertical-align-middle loader-bounce h-50 w-50"></div> El servidor esta ocupado actualmente',
+                "paginate": {
+                    "first": "Primero",
+                    "last": "Último",
+                    "next": "Siguiente",
+                    "previous": "Anterior"
+                }
+            },
+            initComplete: function() {
+                this.api().columns().every(function () {
+                    var that = this;
+                    $('input', this.footer()).on('keyup change', function () {
+                        if (that.search() !== this.value)
+                            that.search(this.value).draw();
+                    });
+                });
+                this.api().columns([7]).every( function (){
+                    var column = this;
+
+                    var select = $('<select class="form-control form-control-sm"><option value=""></option><option>sin atender</option><option>ing. tx</option><option>oym</option><option>terminado</option></select>').
+                    appendTo( $(column.footer()).empty() ).on( 'change', function() {
+                        var val = $.fn.dataTable.util.escapeRegex( $(this).val() );
+                        column.search( val ? '^'+val+'$' : '', true, false ).draw();
+                        //column.search( val, true, true ).draw();
+                    });
+                });
+            }
+        });
+
+        $('#form-agregar-datafill-solicitud').on('submit', function(e) {
+            e.preventDefault();
+            var form = $(this).serialize();
+            $('.form-agregar-mensaje').html('<div class="alert alert-alt alert-info alert-dismissible m-0" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><h5 class="m-0"><div class="loader vertical-align-middle loader-bounce h-40 w-40"></div> Validando solicitud...</h5></div>');
+            $.ajax({
+                method: 'POST',
+                url: 'solicitudes/crear',
+                data: form
+            }).done(function(response) {
+               var json = JSON.parse(response);
+               if(json.status == true) {
+                   location = location;
+               } else {
+                   $('#div-mensaje-agregar-datafill-solicitud').html('<div class="alert alert-alt alert-warning alert-dismissible m-0" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><h5 class="m-0">Mensaje:</h5><ul>'+json.message+'</ul></div>');
+               }
+            });
+        });
+    </script>
+    <script>
+        function update_bitacora (solicitud_id) {
+            $('#bitacora').html('<div class="alert alert-alt alert-info alert-dismissible m-0" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><h5 class="m-0"><div class="loader vertical-align-middle loader-bounce h-40 w-40"></div> Obteniendo Información del Servidor...</h5></div>');
+            $.ajax({
+                method: "POST",
+                url: "solicitudes/detalles",
+                data: { id: solicitud_id }
+            }).done(function(response) {
+                var json = JSON.parse(response);
+                if(json.status == true) {
+                    $.when($('#bitacora').html(json.html)).done(function () {
+                        $('#bitacora').data('id',solicitud_id);
+                        $('html,body').animate({scrollTop: $('#bitacora').offset().top},'slow');
+                    });
+                }
+            });
+        }
+    </script>
+    <script>
+        $('#table-datafill-solicitudes').on('click', '.button-solicitud-detalles', function () {
+            var solicitud_id = $(this).data('id');
+            update_bitacora(solicitud_id);
+        });
+        $('#bitacora').on('click','.md-close', function() {
+            $('#bitacora').empty();
+            $('html,body').animate({scrollTop: $('#table-datafill-solicitudes').offset().top},'slow');
+        });
+    </script>
+
+
+
+    <style>
+        #dropBox-agregar-extra-archivo{
+            border: 3px dashed #2aa847;
+            border-radius: 5px;
+            background: #F3F4F5;
+            cursor: pointer;
+            min-height: 60px;
+            box-sizing: border-box;
+        }
+        #dropBox-agregar-extra-archivo p{
+            text-align: center;
+            margin: 2em 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        #file-input-agregar-extra-archivo{
+            display: none;
+        }
+    </style>
+    <script>
+        // A Uploader
+        $("#dropBox-agregar-extra-archivo").click(function() {
+            $("#file-input-agregar-extra-archivo").click();
+        });
+        $(document).on('drop dragover', function(e) {
+            e.preventDefault();
+        });
+        var event;
+        $("#file-input-agregar-extra-archivo").on('change', prefileUpload_A);
+        $("#form-agregar-extra-archivo").submit(function(e) {
+            e.preventDefault();
+            if(event !== null)  fileUpload_A();
+        });
+        function prefileUpload_A(e) {
+            event = e;
+            $("#dropBox-agregar-extra-archivo").html('<p>'+event.target.value+'</p>');
+        }
+        function fileUpload_A() {
+            $("#dropBox-agregar-extra-archivo").html('<p>'+event.target.value+'<br> Subiendo archivo... por favor espere...</p>');
+            files = event.target.files;
+            var data = new FormData();
+            data.append('id',$("#bitacora").data("id"));
+            for(var i = 0 ; i < files.length ; i++) {
+                var file = files[i];
+                data.append('file',file,file.name);
+                $.ajax({
+                    url: 'solicitudes/extra_archivo',
+                    type: 'POST',
+                    data: data,
+                    contentType: false,
+                    processData: false,
+                    xhr: function() {
+                        var xhr = new windows.XMLHttpRequest();
+                        $("#progress-agregar-extra-archivo").addClass('active');
+                        $("#progress-agregar-extra-archivo").closest('.progress').removeClass('d-none');
+                        // Upload progress
+                        xhr.upload.addEventListener('progress', function(evt) {
+                            if(evt.lengthComputable) {
+                                var percentComplete = evt.loaded/evt.total;
+                                $("#progress-agregar-extra-archivo").css({'width':percentComplete*100+'%'});
+                            }
+                        }, false);
+                        xhr.addEventListener('progress', function(evt) {
+                            if(evt.lengthComputable) {
+                                var percentComplete = evt.loaded/evt.total;
+                            }
+                        }, false);
+                        return xhr;
+                    },
+                    success: function(response) {
+                        var json = JSON.parse(response);
+                        $("#progress-agregar-extra-archivo").closest('.progress').addClass('d-none');
+                        $("#progress-agregar-extra-archivo").css({'width':'0%'});
+                        $("#dropBox-agregar-extra-archivo").html(json.mensaje);
+                        if(json.status == true) {
+                            update_bitacora($("#bitacora").data('id'));
+                        }
+                    }
+                })
+            }
+        }
+    </script>
+{% endblock %}

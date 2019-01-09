@@ -1,0 +1,1077 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>KMZ Caps Nov2018.kml</name>
+	<visibility>0</visibility>
+	<Style id="linkstile1">
+		<IconStyle>
+			<color>ff00ff00</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+		<LineStyle>
+			<color>ff7faa00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="linkstile10">
+		<IconStyle>
+			<color>ff00ff00</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+		<LineStyle>
+			<color>ff7faa00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="linkstile11">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#linkstile10</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#linkstile1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>Links</name>
+		<visibility>0</visibility>
+		<Style id="linkstile24">
+			<LineStyle>
+				<color>ffffff00</color>
+				<width>2</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>30ffff00</color>
+			</PolyStyle>
+		</Style>
+		<Placemark>
+			<name>Link from 0100259_PI_CAP_Talara to 0101710_PI_Talara</name>
+			<visibility>0</visibility>
+			<description>0100259_PI_CAP_Talara:
+
+0101710_PI_Talara:</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-81.272791,-4.579808,39.99999999999999 -81.29119900000001,-4.594356,39.99999999999999 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 0101357_CS_Cap_Red_Sur to 0101347_CS_Ttio</name>
+			<visibility>0</visibility>
+			<description>0101357_CS_Cap_Red_Sur:
+
+0101347_CS_Ttio:</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-71.97878,-13.52066,39.99999999999999 -71.96511200000001,-13.53639,39.99999999999999 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 0102273_IC_CAP_Chincha to 0100815_IC_Chincha</name>
+			<visibility>0</visibility>
+			<description>0102273_IC_CAP_Chincha:
+
+0100815_IC_Chincha:</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-76.13590000000001,-13.417475,39.99999999999999 -76.13413199999999,-13.426594,39.99999999999999 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 0102442_LA_IB_CAP_Chiclayo to 0101004_LA_Chiclayo_Centro</name>
+			<visibility>0</visibility>
+			<description>0102442_LA_IB_CAP_Chiclayo:
+
+0101004_LA_Chiclayo_Centro:</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-79.842805,-6.775796000000001,39.99999999999999 -79.839157,-6.772141000000001,39.99999999999999 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 0103077_JU_CAP_Huancayo to 0101681_JU_Estacion_Huancayo</name>
+			<visibility>0</visibility>
+			<description>0103077_JU_CAP_Huancayo:
+
+0101681_JU_Estacion_Huancayo:</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-75.207036,-12.067131,39.99999999999999 -75.20725,-12.067,39.99999999999999 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 0104242_LI_IB_CAP_Trujillo to 0100607_LI_Husares_de_Junin</name>
+			<visibility>0</visibility>
+			<description>0104242_LI_IB_CAP_Trujillo:
+
+0100607_LI_Husares_de_Junin:</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-79.036045,-8.120869000000001,39.99999999999999 -79.03276099999999,-8.119293000000001,39.99999999999999 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 0104602_LM_CAP_San_Miguel to 0100017_LM_Plaza_San_Miguel</name>
+			<visibility>0</visibility>
+			<description>0104602_LM_CAP_San_Miguel:
+
+0100017_LM_Plaza_San_Miguel:</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-77.08538299999999,-12.077625,39.99999999999999 -77.08614300000001,-12.077587,39.99999999999999 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 0104603_LM_CAP_Minka to 0106344_LM_Minka</name>
+			<visibility>0</visibility>
+			<description>0104603_LM_CAP_Minka:
+
+0106344_LM_Minka:</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-77.11273300000001,-12.047111,39.99999999999999 -77.11385300000001,-12.04726,39.99999999999999 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 0104604_LM_CAP_Fiori to 0100116_LM_Tomas_Valle</name>
+			<visibility>0</visibility>
+			<description>0104604_LM_CAP_Fiori:
+
+0100116_LM_Tomas_Valle:</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-77.060633,-12.009011,39.99999999999999 -77.06231699999999,-12.005737,39.99999999999999 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 0104610_LM_CAP_San_Borja to 0100070_LM_Museo</name>
+			<visibility>0</visibility>
+			<description>0104610_LM_CAP_San_Borja:
+
+0100070_LM_Museo:</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-77.002627,-12.093,39.99999999999999 -77.003441,-12.09119,39.99999999999999 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 0104611_LM_CAP_Miraflores to 0100183_LM_Comandante_Espinar</name>
+			<visibility>0</visibility>
+			<description>0104611_LM_CAP_Miraflores:
+
+0100183_LM_Comandante_Espinar:</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-77.036528,-12.116311,39.99999999999999 -77.036613,-12.11746,39.99999999999999 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 0104615_LM_CAP_San_Juan_Miraflores to 0100033_LM_San_Juan_de_Mirafl</name>
+			<visibility>0</visibility>
+			<description>0104615_LM_CAP_San_Juan_Miraflores:
+
+0100033_LM_San_Juan_de_Mirafl:</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-76.973411,-12.158589,39.99999999999999 -76.97663900000001,-12.158485,39.99999999999999 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 0104821_IC_IB_CAP_Ica to 0100821_IC_Ayabaca</name>
+			<visibility>0</visibility>
+			<description>0104821_IC_IB_CAP_Ica:
+
+0100821_IC_Ayabaca:</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-75.729818,-14.069329,39.99999999999999 -75.73305499999999,-14.070599,39.99999999999999 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 0102896_PN_CAP_Juliaca to 0101457_PN_Nunez_Butron</name>
+			<visibility>0</visibility>
+			<description>0102896_PN_CAP_Juliaca:
+
+0101457_PN_Nunez_Butron:</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-70.13252199999999,-15.493839,39.99999999999999 -70.12839,-15.4924,39.99999999999999 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 0104975_LM_CAP_Megaplaza to 0100201_LM_Mega_Plaza</name>
+			<visibility>0</visibility>
+			<description>0104975_LM_CAP_Megaplaza:
+
+0100201_LM_Mega_Plaza:</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-77.06186700000001,-11.994314,39.99999999999999 -77.059814,-11.996965,39.99999999999999 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 0101170_MQ_CAP_ILO to 0101102_MQ_Alto_Ilo</name>
+			<visibility>0</visibility>
+			<description>0101170_MQ_CAP_ILO:
+
+0101102_MQ_Alto_Ilo:</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-71.43000000000001,-17.74,39.99999999999999 -71.343208,-17.659378,39.99999999999999 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 82055_LM_TPF_Puente_Piedra to 0100373_LM_Carabayllo</name>
+			<visibility>0</visibility>
+			<description>82055_LM_TPF_Puente_Piedra:
+
+0100373_LM_Carabayllo:</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-77.076061,-11.86555,39.99999999999999 -77.059128,-11.870556,39.99999999999999 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 82059_AQ_TPF_Arequipa_Moral to 0100901_AQ_Arequipa_Centro</name>
+			<visibility>0</visibility>
+			<description>82059_AQ_TPF_Arequipa_Moral:
+
+0100901_AQ_Arequipa_Centro:</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-71.535139,-16.397833,39.99999999999999 -71.534874,-16.400084,39.99999999999999 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 82052_PI_TPF_OP_Piura to 0101706_PI_Textil_Piura</name>
+			<visibility>0</visibility>
+			<description>82052_PI_TPF_OP_Piura:
+
+0101706_PI_Textil_Piura:</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-80.622023,-5.181901,39.99999999999999 -80.65682200000001,-5.179399,39.99999999999999 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 82049_LM_TPF_ Plaza_San_Miguel to 0100017_LM_Plaza_San_Miguel</name>
+			<visibility>0</visibility>
+			<description>82049_LM_TPF_ Plaza_San_Miguel:
+
+0100017_LM_Plaza_San_Miguel:</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-77.0825,-12.076583,39.99999999999999 -77.08614300000001,-12.077587,39.99999999999999 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 82046_LM_TP_Centro_Civico to 0100119_LM_Estadio_Alianza</name>
+			<visibility>0</visibility>
+			<description>82046_LM_TP_Centro_Civico:
+
+0100119_LM_Estadio_Alianza:</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-77.036706,-12.057139,39.99999999999999 -77.021835,-12.068927,39.99999999999999 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 82047_CS_TP_Cusco_Sol to 0101302_CS_Cusco_Centro</name>
+			<visibility>0</visibility>
+			<description>82047_CS_TP_Cusco_Sol:
+
+0101302_CS_Cusco_Centro:</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-71.976664,-13.520183,39.99999999999999 -71.982338,-13.523922,39.99999999999999 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 82056_TA_TPF_Tacna_Apurimac to 0101201_TA_Tacna_Centro</name>
+			<visibility>0</visibility>
+			<description>82056_TA_TPF_Tacna_Apurimac:
+
+0101201_TA_Tacna_Centro:</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-70.249222,-18.013028,39.99999999999999 -70.249222,-18.012377,39.99999999999999 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 0104053_AQ_CAP_Arequipa to 0100902_AQ_Sol_de_Mayo</name>
+			<visibility>0</visibility>
+			<description>0104053_AQ_CAP_Arequipa:
+
+0100902_AQ_Sol_de_Mayo:</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-71.55019299999999,-16.388964,39.99999999999999 -71.54599,-16.389736,39.99999999999999 
+				</coordinates>
+			</LineString>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Sites</name>
+		<visibility>0</visibility>
+		<Style id="sitestile47">
+			<IconStyle>
+				<color>ff40ff00</color>
+				<Icon>
+					<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+				</Icon>
+			</IconStyle>
+			<LineStyle>
+				<color>ff40ff00</color>
+				<width>2</width>
+			</LineStyle>
+		</Style>
+		<Placemark>
+			<name>0100259_PI_CAP_Talara</name>
+			<visibility>0</visibility>
+			<description>Lat: -4.579808
+Lng: -81.272791
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-81.272791,-4.579808,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0101710_PI_Talara</name>
+			<visibility>0</visibility>
+			<description>Lat: -4.594356
+Lng: -81.291199
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-81.29119900000001,-4.594356,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0101357_CS_Cap_Red_Sur</name>
+			<visibility>0</visibility>
+			<description>Lat: -13.520660
+Lng: -71.978780
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-71.97878,-13.52066,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0101347_CS_Ttio</name>
+			<visibility>0</visibility>
+			<description>Lat: -13.536390
+Lng: -71.965112
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-71.96511200000001,-13.53639,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0102273_IC_CAP_Chincha</name>
+			<visibility>0</visibility>
+			<description>Lat: -13.417475
+Lng: -76.135900
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-76.13590000000001,-13.417475,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100815_IC_Chincha</name>
+			<visibility>0</visibility>
+			<description>Lat: -13.426594
+Lng: -76.134132
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-76.13413199999999,-13.426594,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0102442_LA_IB_CAP_Chiclayo</name>
+			<visibility>0</visibility>
+			<description>Lat: -6.775796
+Lng: -79.842805
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-79.842805,-6.775796000000001,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0101004_LA_Chiclayo_Centro</name>
+			<visibility>0</visibility>
+			<description>Lat: -6.772141
+Lng: -79.839157
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-79.839157,-6.772141000000001,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0103077_JU_CAP_Huancayo</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.067131
+Lng: -75.207036
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-75.207036,-12.067131,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0101681_JU_Estacion_Huancayo</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.067000
+Lng: -75.207250
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-75.20725,-12.067,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0104242_LI_IB_CAP_Trujillo</name>
+			<visibility>0</visibility>
+			<description>Lat: -8.120869
+Lng: -79.036045
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-79.036045,-8.120869000000001,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100607_LI_Husares_de_Junin</name>
+			<visibility>0</visibility>
+			<description>Lat: -8.119293
+Lng: -79.032761
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-79.03276099999999,-8.119293000000001,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0104602_LM_CAP_San_Miguel</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.077625
+Lng: -77.085383
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.08538299999999,-12.077625,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100017_LM_Plaza_San_Miguel</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.077587
+Lng: -77.086143
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.08614300000001,-12.077587,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0104603_LM_CAP_Minka</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.047111
+Lng: -77.112733
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.11273300000001,-12.047111,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0106344_LM_Minka</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.047260
+Lng: -77.113853
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.11385300000001,-12.04726,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0104604_LM_CAP_Fiori</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.009011
+Lng: -77.060633
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.060633,-12.009011,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100116_LM_Tomas_Valle</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.005737
+Lng: -77.062317
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.06231699999999,-12.005737,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0104610_LM_CAP_San_Borja</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.093000
+Lng: -77.002627
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.002627,-12.093,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100070_LM_Museo</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.091190
+Lng: -77.003441
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.003441,-12.09119,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0104611_LM_CAP_Miraflores</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.116311
+Lng: -77.036528
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.036528,-12.116311,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100183_LM_Comandante_Espinar</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.117460
+Lng: -77.036613
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.036613,-12.11746,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0104615_LM_CAP_San_Juan_Miraflores</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.158589
+Lng: -76.973411
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-76.973411,-12.158589,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100033_LM_San_Juan_de_Mirafl</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.158485
+Lng: -76.976639
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-76.97663900000001,-12.158485,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0104821_IC_IB_CAP_Ica</name>
+			<visibility>0</visibility>
+			<description>Lat: -14.069329
+Lng: -75.729818
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-75.729818,-14.069329,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100821_IC_Ayabaca</name>
+			<visibility>0</visibility>
+			<description>Lat: -14.070599
+Lng: -75.733055
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-75.73305499999999,-14.070599,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0102896_PN_CAP_Juliaca</name>
+			<visibility>0</visibility>
+			<description>Lat: -15.493839
+Lng: -70.132522
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-70.13252199999999,-15.493839,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0101457_PN_Nunez_Butron</name>
+			<visibility>0</visibility>
+			<description>Lat: -15.492400
+Lng: -70.128390
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-70.12839,-15.4924,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0104975_LM_CAP_Megaplaza</name>
+			<visibility>0</visibility>
+			<description>Lat: -11.994314
+Lng: -77.061867
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.06186700000001,-11.994314,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100201_LM_Mega_Plaza</name>
+			<visibility>0</visibility>
+			<description>Lat: -11.996965
+Lng: -77.059814
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.059814,-11.996965,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0101170_MQ_CAP_ILO</name>
+			<visibility>0</visibility>
+			<description>Lat: -17.740000
+Lng: -71.430000
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-71.43000000000001,-17.74,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0101102_MQ_Alto_Ilo</name>
+			<visibility>0</visibility>
+			<description>Lat: -17.659378
+Lng: -71.343208
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-71.343208,-17.659378,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>82055_LM_TPF_Puente_Piedra</name>
+			<visibility>0</visibility>
+			<description>Lat: -11.865550
+Lng: -77.076061
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.076061,-11.86555,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100373_LM_Carabayllo</name>
+			<visibility>0</visibility>
+			<description>Lat: -11.870556
+Lng: -77.059128
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.059128,-11.870556,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>82059_AQ_TPF_Arequipa_Moral</name>
+			<visibility>0</visibility>
+			<description>Lat: -16.397833
+Lng: -71.535139
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-71.535139,-16.397833,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100901_AQ_Arequipa_Centro</name>
+			<visibility>0</visibility>
+			<description>Lat: -16.400084
+Lng: -71.534874
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-71.534874,-16.400084,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>82052_PI_TPF_OP_Piura</name>
+			<visibility>0</visibility>
+			<description>Lat: -5.181901
+Lng: -80.622023
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-80.622023,-5.181901,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0101706_PI_Textil_Piura</name>
+			<visibility>0</visibility>
+			<description>Lat: -5.179399
+Lng: -80.656822
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-80.65682200000001,-5.179399,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>82049_LM_TPF_ Plaza_San_Miguel</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.076583
+Lng: -77.082500
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.0825,-12.076583,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>82046_LM_TP_Centro_Civico</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.057139
+Lng: -77.036706
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.036706,-12.057139,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100119_LM_Estadio_Alianza</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.068927
+Lng: -77.021835
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.021835,-12.068927,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>82047_CS_TP_Cusco_Sol</name>
+			<visibility>0</visibility>
+			<description>Lat: -13.520183
+Lng: -71.976664
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-71.976664,-13.520183,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0101302_CS_Cusco_Centro</name>
+			<visibility>0</visibility>
+			<description>Lat: -13.523922
+Lng: -71.982338
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-71.982338,-13.523922,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>82056_TA_TPF_Tacna_Apurimac</name>
+			<visibility>0</visibility>
+			<description>Lat: -18.013028
+Lng: -70.249222
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-70.249222,-18.013028,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0101201_TA_Tacna_Centro</name>
+			<visibility>0</visibility>
+			<description>Lat: -18.012377
+Lng: -70.249222
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-70.249222,-18.012377,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0104053_AQ_CAP_Arequipa</name>
+			<visibility>0</visibility>
+			<description>Lat: -16.388964
+Lng: -71.550193
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-71.55019299999999,-16.388964,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100902_AQ_Sol_de_Mayo</name>
+			<visibility>0</visibility>
+			<description>Lat: -16.389736
+Lng: -71.545990
+Tower Type: unknown</description>
+			<styleUrl>#linkstile11</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-71.54599,-16.389736,39.99999999999999</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

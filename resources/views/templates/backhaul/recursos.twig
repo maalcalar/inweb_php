@@ -1,0 +1,488 @@
+{% extends "base/web.twig" %}
+
+{% set page_title = "Recursos Backhaul" %}
+
+{% block plugin_stylesheets %}
+<link rel="stylesheet" href="{{ TwigFunctions('app_root') }}resources/views/vendor/datatables.net-bs4/dataTables.bootstrap4.min.css">
+{% endblock %}
+
+{% block page_content %}
+<div class="page">
+    <div class="page-header">
+        <h1 class="page-title">Inventario de PAG & CSR</h1>
+        <p class="page-description">
+            Administrador:
+            <a href="mailto:fernando.huarcaya@entel.pe?Subject=Feedback Recursos Backhaul" target="_top">
+                Fernando Huarcaya
+            </a>
+        </p>
+        <div class="page-header-actions">
+            <div class="btn-group btn-group-sm" aria-label="Page Header Actions" role="group">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-agregar-backhaul-equipo">
+                    <i class="icon md-plus" aria-hidden="true"></i>
+                    <span class="hidden-sm-down">Agregar Equipo</span>
+                </button>
+                <!--
+                <button type="button" class="btn btn-primary">
+                    <i class="icon md-refresh" aria-hidden="true"></i>
+                    <span class="hidden-sm-down">Actualizar</span>
+                </button>
+                -->
+                <button type="button" class="btn btn-primary">
+                    <i class="icon md-download" aria-hidden="true"></i>
+                    <span class="hidden-sm-down">Exportar</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="page-content">
+        <div class="panel panel-primary panel-line">
+            <div class="panel-heading">
+                <h3 class="panel-title">Inventario</h3>
+            </div>
+            <div class="panel-body">
+                <table id="backhaul-inventario-equipos" class="table table-bordered table-striped w-full text-nowrap table-sm">
+                    <thead>
+                        <tr class="text-center bg-blue-800">
+                            <th></th>
+                            <th class="white">HOSTNAME</th>
+                            <th class="white">SITE</th>
+                            <th class="white">LOOPBACK 0</th>
+                            <th class="white">LOOPBACK 1</th>
+                            <th class="white">ANILLO</th>
+                            <th class="white">ÁREA OSPF</th>
+                            <th class="white">ZONA</th>
+                            <th class="white">ESTADO</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for equipo in equipos %}
+                        <tr>
+                            <td>
+                                <a class="badge badge-success editar-backhaul-recurso" href="javascript:void(0)" style="text-decoration: none" data-id="{{ equipo.PAG_ID }}" data-toggle="modal" data-target="#modal-editar-backhaul-equipo">Editar</a>
+                                <a class="badge badge-primary" href="monitor/{{ equipo.PAG_ID }}" style="text-decoration: none" target="_blank">Monitor</a>
+                            </td>
+                            <td class="text-strong">{{ equipo.HOSTNAME }}</td>
+                            <td>{{ equipo.SITE_NOMBRE }}</td>
+                            <td>{{ equipo.LOOPBACK0 }}</td>
+                            <td>{{ equipo.LOOPBACK1 }}</td>
+                            <td>{{ equipo.ANILLO }}</td>
+                            <td>{{ equipo.AREA_OSPF }}</td>
+                            <td>{{ equipo.ZONA }}</td>
+                            <td class="text-center">
+                            {% if equipo.ESTADO == "ON-Air" %}
+                                <span class="badge badge-success">{{ equipo.ESTADO }}</span>
+                            {% elseif equipo.ESTADO == "Asignado" %}
+                                <span class="badge badge-info">{{ equipo.ESTADO }}</span>
+                            {% elseif equipo.ESTADO == "Integrado" %}
+                                <span class="badge badge-primary">{{ equipo.ESTADO }}</span>
+                            {% elseif equipo.ESTADO == "Eliminado" %}
+                                <span class="badge badge-danger">{{ equipo.ESTADO }}</span>
+                            {% elseif equipo.ESTADO == "TBD" %}
+                                <span class="badge badge-dark">{{ equipo.ESTADO }}</span>
+                            {% endif %}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                    <tfoot>
+                    <tr class="text-center">
+                        <th></th>
+                        <th><input type="text" class="form-control form-control-sm" placeholder="HOSTNAME"></th>
+                        <th><input type="text" class="form-control form-control-sm" placeholder="SITE"></th>
+                        <th><input type="text" class="form-control form-control-sm" placeholder="LOOPBACK 0"></th>
+                        <th><input type="text" class="form-control form-control-sm" placeholder="LOOPBACK 1"></th>
+                        <th><input type="text" class="form-control form-control-sm" placeholder="ANILLO"></th>
+                        <th><input type="text" class="form-control form-control-sm" placeholder="ÁREA OSPF"></th>
+                        <th>
+                            <select class="form-control form-control-sm">
+                                <option value="">
+                                    ZONA
+                                </option>
+                            </select>
+                        </th>
+                        <th><input type="text" class="form-control form-control-sm" placeholder="ESTADO"></th>
+                    </tr>
+                    </tfoot>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block page_extra_content %}
+<div class="modal fade modal-primary" id="modal-agregar-backhaul-equipo" aria-hidden="false" aria-labelledby="modal-agregar-backhaul-equipo" role="dialog" tabindex="-1">
+    <div class="modal-dialog">
+        <form class="modal-content" id="form-agregar-backhaul-equipo" action="{{ TwigFunctions('app_root') }}recursos/guardar" method="post">
+            <div class="modal-header">
+                <button type="button" class="close pt-0" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">
+                    ×
+                </span>
+                </button>
+                <h4 class="modal-title">
+                    Agregar Equipo [ Recurso Backhaul ]
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xl-6 col-sm-12 form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon w-100">
+                                Hostname
+                            </span>
+                            <input type="text" class="form-control" name="agregar[hostname]" placeholder="Hostname" required/>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-sm-12 form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon w-100">
+                                Site
+                            </span>
+                            <input type="text" class="form-control" name="agregar[site_nombre]" placeholder="Site" required/>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-sm-12 form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon w-100">
+                                Anillo
+                            </span>
+                            <input type="text" class="form-control" name="agregar[anillo]" placeholder="Anillo"/>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-sm-12 form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon w-100">
+                                Zona
+                            </span>
+                            <select class="form-control" name="agregar[zona]" required>
+                                <option value="">Zona</option>
+                                <option value="Lima Norte">Lima Norte</option>
+                                <option value="Lima Sur">Lima Sur</option>
+                                <option value="Lima Este">Lima Este</option>
+                                <option value="Lima Oeste">Lima Oeste</option>
+                                <option value="Lima Provincia">Lima Provincia</option>
+                                <option value="Amazonas">Amazonas</option>
+                                <option value="Ancash">Ancash</option>
+                                <option value="Apurimac">Apurimac</option>
+                                <option value="Arequipa">Arequipa</option>
+                                <option value="Ayacucho">Ayacucho</option>
+                                <option value="Cajamarca">Cajamarca</option>
+                                <option value="Cusco">Cusco</option>
+                                <option value="Huancavelica">Huancavelica</option>
+                                <option value="Huanuco">Huanuco</option>
+                                <option value="Ica">Ica</option>
+                                <option value="Junin">Junin</option>
+                                <option value="La Libertad">La Libertad</option>
+                                <option value="Lambayeque">Lambayeque</option>
+                                <option value="Loreto">Loreto</option>
+                                <option value="Madre de Dios">Madre de Dios</option>
+                                <option value="Moquegua">Moquegua</option>
+                                <option value="Pasco">Pasco</option>
+                                <option value="Piura">Piura</option>
+                                <option value="Puno">Puno</option>
+                                <option value="San Martin">San Martin</option>
+                                <option value="Tacna">Tacna</option>
+                                <option value="Tumbes">Tumbes</option>
+                                <option value="Ucayali">Ucayali</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-sm-12 form-group parametros-ocultos d-none">
+                        <div class="input-group">
+                            <span class="input-group-addon w-100">
+                                Loopback0
+                            </span>
+                            <input type="text" class="form-control" name="agregar[loopback0]" placeholder="Loopback 0" required/>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-sm-12 form-group parametros-ocultos d-none">
+                        <div class="input-group">
+                            <span class="input-group-addon w-100">
+                                Loopback1
+                            </span>
+                            <input type="text" class="form-control" name="agregar[loopback1]" placeholder="Loopback 1" required/>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-sm-12 form-group parametros-ocultos d-none">
+                        <div class="input-group">
+                            <span class="input-group-addon w-100">
+                                Área OSPF
+                            </span>
+                            <input type="text" class="form-control" name="agregar[area_ospf]" placeholder="Área OSPF" required/>
+                        </div>
+                    </div>
+                    <div class="col-xl-12 col-sm-12 form-group m-0" id="div-mensaje-agregar-backhaul-equipo">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-pure waves-effect waves-light waves-round" data-dismiss="modal">
+                    Cancelar
+                </button>
+                <button type="reset" class="btn btn-default btn-pure waves-effect waves-light waves-round">
+                    Limpiar Formulario
+                </button>
+                <button type="button" class="btn btn-primary waves-effect waves-light waves-round" id="button-generar-backhaul-equipo">
+                    Generar
+                </button>
+                <button type="submit" class="btn btn-success waves-effect waves-light waves-round">
+                    Guardar
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modal fade modal-success" id="modal-editar-backhaul-equipo" aria-hidden="false" aria-labelledby="modal-editar-backhaul-equipo" role="dialog" tabindex="-1">
+    <div class="modal-dialog">
+        <form class="modal-content" id="form-editar-backhaul-equipo" action="recursos/editar" method="post">
+            <div class="modal-header">
+                <button type="button" class="close pt-0" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">
+                    ×
+                </span>
+                </button>
+                <h4 class="modal-title">
+                    Editar Equipo [ Recurso Bakchaul ]
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xl-6 col-sm-12 form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon w-100">
+                                Hostname
+                            </span>
+                            <input type="text" class="form-control" name="editar[hostname]" placeholder="Hostname" required/>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-sm-12 form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon w-100">
+                                Site
+                            </span>
+                            <input type="text" class="form-control" name="editar[site_nombre]" placeholder="Site" required/>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-sm-12 form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon w-100">
+                                Loopback 0
+                            </span>
+                            <input type="text" class="form-control" name="editar[loopback0]" placeholder="Loopback 0" required/>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-sm-12 form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon w-100">
+                                Loopback 1
+                            </span>
+                            <input type="text" class="form-control" name="editar[loopback1]" placeholder="Loopback 1" required/>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-sm-12 form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon w-100">
+                                Anillo
+                            </span>
+                            <input type="text" class="form-control" name="editar[anillo]" placeholder="Anillo"/>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-sm-12 form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon w-100">
+                                Área OSPF
+                            </span>
+                            <input type="text" class="form-control" name="editar[area_ospf]" placeholder="Área OSPF" required/>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-sm-12 form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon w-100">
+                                Zona
+                            </span>
+                            <select class="form-control" name="editar[zona]" required>
+                                <option value="">Zona</option>
+                                <option value="Lima Norte">Lima Norte</option>
+                                <option value="Lima Sur">Lima Sur</option>
+                                <option value="Lima Este">Lima Este</option>
+                                <option value="Lima Oeste">Lima Oeste</option>
+                                <option value="Lima Provincia">Lima Provincia</option>
+                                <option value="Amazonas">Amazonas</option>
+                                <option value="Ancash">Ancash</option>
+                                <option value="Apurimac">Apurimac</option>
+                                <option value="Arequipa">Arequipa</option>
+                                <option value="Ayacucho">Ayacucho</option>
+                                <option value="Cajamarca">Cajamarca</option>
+                                <option value="Cusco">Cusco</option>
+                                <option value="Huancavelica">Huancavelica</option>
+                                <option value="Huanuco">Huanuco</option>
+                                <option value="Ica">Ica</option>
+                                <option value="Junin">Junin</option>
+                                <option value="La Libertad">La Libertad</option>
+                                <option value="Lambayeque">Lambayeque</option>
+                                <option value="Loreto">Loreto</option>
+                                <option value="Madre de Dios">Madre de Dios</option>
+                                <option value="Moquegua">Moquegua</option>
+                                <option value="Pasco">Pasco</option>
+                                <option value="Piura">Piura</option>
+                                <option value="Puno">Puno</option>
+                                <option value="San Martin">San Martin</option>
+                                <option value="Tacna">Tacna</option>
+                                <option value="Tumbes">Tumbes</option>
+                                <option value="Ucayali">Ucayali</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-sm-12 form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon w-100">
+                                Estado
+                            </span>
+                            <select class="form-control" name="editar[estado]" placeholder="Estado" required>
+                                <option value="">Estado</option>
+                                <option value="TBD" class="text-dark">TBD</option>
+                                <option value="Asignado" class="text-info">Asignado</option>
+                                <option value="Integrado" class="text-primary">Integrado</option>
+                                <option value="ON-Air" class="text-success">ON-Air</option>
+                                <option value="Eliminado" class="text-danger">Eliminado</option>
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xl-12 col-sm-12 form-group m-0" id="div-mensaje-editar-backhaul-equipo">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-pure waves-effect waves-light waves-round" data-dismiss="modal">
+                    Cancelar
+                </button>
+                <button type="reset" class="btn btn-default btn-pure waves-effect waves-light waves-round">
+                    Limpiar Formulario
+                </button>
+                <button type="submit" class="btn btn-success waves-effect waves-light waves-round">
+                    Guardar
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
+
+{% block js_plugins %}
+<script src="{{ TwigFunctions('app_root') }}resources/views/vendor/datatables.net/jquery.dataTables.js"></script>
+<script src="{{ TwigFunctions('app_root') }}resources/views/vendor/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+{% endblock %}
+
+{% block js_page %}
+<script src="{{ TwigFunctions('app_root') }}resources/views/js/Plugin/datatables.js"></script>
+<script>
+var backhaul_inventario_equipos;
+backhaul_inventario_equipos = $('#backhaul-inventario-equipos').DataTable({
+    "stateSave": false,
+    "scrollX": true,
+    "scrollCollapse": true,
+    "pagingType": "full_numbers",
+    "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "Todos"]],
+    "ordering": true,
+    "order": [[1,"asc"]],
+    "language": {
+        "search": "",
+        "sSearchPlaceholder": "Buscar...",
+        "infoEmpty": "0 resultados",
+        "sEmptyTable": "No hay información para mostrar",
+        "zeroRecords": "No hay resultados para su búsqueda",
+        "sInfo": "Equipos del _START_ al _END_ de _TOTAL_",
+        "infoFiltered": "(de un total de _MAX_ equipos)",
+        "lengthMenu": "_MENU_",
+        "loadingRecords": '<div class="loader vertical-align-middle loader-bounce h-50 w-50"></div> Por favor espere, cargando datos...',
+        "processing": '<div class="loader vertical-align-middle loader-bounce h-50 w-50"></div> El servidor esta ocupado actualmente',
+        "paginate": {
+            "first": "Primero",
+            "last": "Último",
+            "next": "Siguiente",
+            "previous": "Anterior"
+        }
+    },
+    initComplete: function() {
+        this.api().columns().every(function () {
+            var that = this;
+            $('input', this.footer()).on('keyup change', function () {
+                if (that.search() !== this.value)
+                    that.search(this.value).draw();
+            });
+        });
+        this.api().columns([7]).every( function (){
+            var column = this;
+            var select = $('<select class="form-control form-control-sm"><option value=""></option></select>').
+            appendTo( $(column.footer()).empty() ).on( 'change', function() {
+                var val = $.fn.dataTable.util.escapeRegex( $(this).val() );
+                column.search( val ? '^'+val+'$' : '', true, false ).draw();
+            });
+            column.data().unique().sort().each( function ( d, j ) {
+                select.append('<option value="'+d+'">'+d+'</option>');
+            });
+        });
+        this.api().columns([8]).every( function (){
+            var column = this;
+            var select = $('<select class="form-control form-control-sm"><option value=""></option><option value="TBD">TBD</option><option value="Asignado">Asignado</option><option value="Integrado">Integrado</option><option value="On-Air">ON-Air</option><option value="Eliminado">Eliminado</option></select>').
+            appendTo( $(column.footer()).empty() ).on( 'change', function() {
+                var val = $.fn.dataTable.util.escapeRegex( $(this).val() );
+                column.search( val ? '^'+val+'$' : '', true, false ).draw();
+            });
+        });
+    }
+});
+
+$('#button-generar-backhaul-equipo').on('click', function() {
+    var form = $('#form-agregar-backhaul-equipo').serialize();
+    $.ajax({
+        method: "POST",
+        url: "recursos/generar",
+        data: form
+    }).done(function(response) {
+        var json = JSON.parse(response);
+        var status = null;
+        if(json.success) {
+            status = 'success';
+            $('input[name="agregar[loopback0]"]').val(json.loopback0);
+            $('input[name="agregar[loopback1]"]').val(json.loopback1);
+            $('input[name="agregar[area_ospf]"]').val(json.area_ospf);
+            $('.parametros-ocultos').removeClass('d-none');
+        } else {
+            status = 'warning';
+        }
+        $('#div-mensaje-agregar-backhaul-equipo').html('<div class="alert alert-alt alert-'+status+' alert-dismissible m-0" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><h5 class="m-0">Mensaje:</h5><ul>'+json.message+'</ul></div>');
+    });
+});
+
+$('#form-agregar-backhaul-equipo').on('reset', function() {
+    setTimeout(function() {
+        $('.parametros-ocultos').addClass('d-none');
+        $('#div-mensaje-agregar-backhaul-equipo').html('');
+    }, 100);
+});
+
+$('.editar-backhaul-recurso').on('click', function () {
+    $('#form-editar-backhaul-equipo').find(':submit').prop("disabled",true);
+    $('#div-mensaje-editar-backhaul-equipo').html('<div class="alert alert-alt alert-info alert-dismissible m-0" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><h5 class="m-0"><div class="loader vertical-align-middle loader-bounce h-40 w-40"></div> Obteniendo Datos...</h5></div>');
+    id = $(this).data('id');
+    $.ajax({
+        method: "GET",
+        url: "recursos/getByID/"+id
+    }).done(function(response) {
+        var json = JSON.parse(response);
+        $('#div-mensaje-editar-backhaul-equipo').html('');
+        $('#form-editar-backhaul-equipo').find(':submit').prop("disabled",false);
+        $.each(json, function (key, value) {
+            if(key == "estado" || key == "zona") $("select[name='editar["+key+"]']").val(value).change();
+            else $("input[name='editar["+key+"]']").val(value);
+        })
+    });
+});
+</script>
+{% endblock %}

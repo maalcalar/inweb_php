@@ -1,0 +1,865 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>KMZ Red Acceso AGG Nov2018.kml</name>
+	<open>1</open>
+	<Style id="linkstile121">
+		<IconStyle>
+			<color>ff00ff00</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="linkstile123">
+		<IconStyle>
+			<color>ff00ff00</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>30ffff00</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="linkstile122">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#linkstile121</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#linkstile123</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>Links</name>
+		<Style id="linkstile23">
+			<LineStyle>
+				<color>ffffff00</color>
+				<width>2</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>30ffff00</color>
+			</PolyStyle>
+		</Style>
+		<Placemark>
+			<name>Link from 0100004_LM_Aeropuerto to 0100074_LM_Haya_de_la_Torre</name>
+			<description>0100004_LM_Aeropuerto:
+
+0100074_LM_Haya_de_la_Torre:</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-77.103577,-12.022777,50.00000000000001 -77.110207,-12.071667,50.00000000000001 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 0100034_LM_Chorrillos to 0100033_LM_San_Juan_de_Mirafl</name>
+			<description>0100034_LM_Chorrillos:
+
+0100033_LM_San_Juan_de_Mirafl:</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-77.00142700000001,-12.185929,50.00000000000001 -76.97663900000001,-12.158485,50.00000000000001 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 0100038_LM_Villa_Salvador to 0100544_LM_Repetidor_Morro</name>
+			<description>0100038_LM_Villa_Salvador:
+
+0100544_LM_Repetidor_Morro:</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-76.94194,-12.209842,50.00000000000001 -77.02939600000001,-12.182817,50.00000000000001 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 0100105_LM_Las_Torres to 0100038_LM_Villa_Salvador</name>
+			<description>0100105_LM_Las_Torres:
+
+0100038_LM_Villa_Salvador:</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-76.950439,-12.185831,50.00000000000001 -76.94194,-12.209842,50.00000000000001 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 0100149_LM_Trapiche to 0100373_LM_Carabayllo</name>
+			<description>0100149_LM_Trapiche:
+
+0100373_LM_Carabayllo:</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-77.072014,-11.926356,50.00000000000001 -77.059128,-11.870556,50.00000000000001 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 0100188_LM_Huachipa to 0100166_LM_TECSUP</name>
+			<description>0100188_LM_Huachipa:
+
+0100166_LM_TECSUP:</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-76.918831,-12.019989,50.00000000000001 -76.94895200000001,-12.045384,50.00000000000001 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 0100373_LM_Carabayllo to 0100540_LM_Repetidor_La_Milla</name>
+			<description>0100373_LM_Carabayllo:
+
+0100540_LM_Repetidor_La_Milla:</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-77.059128,-11.870556,50.00000000000001 -77.06886299999999,-12.020964,50.00000000000001 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 0100390_LM_Quipa to 0100387_LM_Lurin</name>
+			<description>0100390_LM_Quipa:
+
+0100387_LM_Lurin:</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-76.77115600000001,-12.460928,50.00000000000001 -76.89816999999999,-12.245306,50.00000000000001 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 0100606_LI_El_Alambre to 0100607_LI_Husares_de_Junin</name>
+			<description>0100606_LI_El_Alambre:
+
+0100607_LI_Husares_de_Junin:</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-79.045136,-8.132422999999999,50.00000000000001 -79.03276099999999,-8.119293000000001,50.00000000000001 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 0100607_LI_Husares_de_Junin to 0100612_LI_La_Esperanza</name>
+			<description>0100607_LI_Husares_de_Junin:
+
+0100612_LI_La_Esperanza:</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-79.03276099999999,-8.119293000000001,50.00000000000001 -79.04637099999999,-8.079599999999999,50.00000000000001 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 0100632_LI_Peralta to 0100607_LI_Husares_de_Junin</name>
+			<description>0100632_LI_Peralta:
+
+0100607_LI_Husares_de_Junin:</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-79.01039900000001,-8.1051,50.00000000000001 -79.03276099999999,-8.119293000000001,50.00000000000001 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 0100821_IC_Ayabaca to 0100820_IC_Cerro_Prieto</name>
+			<description>0100821_IC_Ayabaca:
+
+0100820_IC_Cerro_Prieto:</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-75.73305499999999,-14.070599,50.00000000000001 -75.789047,-13.997686,50.00000000000001 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 0100907_AQ_Zamacola to 0100903_AQ_El_Palomar</name>
+			<description>0100907_AQ_Zamacola:
+
+0100903_AQ_El_Palomar:</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-71.571411,-16.354111,50.00000000000001 -71.543854,-16.420238,50.00000000000001 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 0101302_CS_Cusco_Centro to 0101301_CS_Wanchaq</name>
+			<description>0101302_CS_Cusco_Centro:
+
+0101301_CS_Wanchaq:</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-71.982338,-13.523922,50.00000000000001 -71.956757,-13.527722,50.00000000000001 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 0101314_CS_Sol_de_Oro to 0101301_CS_Wanchaq</name>
+			<description>0101314_CS_Sol_de_Oro:
+
+0101301_CS_Wanchaq:</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-71.915916,-13.525444,50.00000000000001 -71.956757,-13.527722,50.00000000000001 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 0101405_PN_Llallahuani to 0101406_PN_Juliaca_Cerro</name>
+			<description>0101405_PN_Llallahuani:
+
+0101406_PN_Juliaca_Cerro:</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-70.0168,-15.813206,50.00000000000001 -70.13629899999999,-15.496886,50.00000000000001 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 0101539_CA_Cerro_Cumbemayo to 0101509_CA_El_Quinde</name>
+			<description>0101539_CA_Cerro_Cumbemayo:
+
+0101509_CA_El_Quinde:</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-78.52535,-7.163520000000001,50.00000000000001 -78.50695,-7.15127,50.00000000000001 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 0103082_JU_El_Tambo_R1 to 0101601_JU_Huancayo_Centro</name>
+			<description>0103082_JU_El_Tambo_R1:
+
+0101601_JU_Huancayo_Centro:</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-75.224428,-12.039903,50.00000000000001 -75.210556,-12.069083,50.00000000000001 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 0101704_PI_Piura_Centro to 0101706_PI_Textil_Piura</name>
+			<description>0101704_PI_Piura_Centro:
+
+0101706_PI_Textil_Piura:</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-80.625854,-5.1967,50.00000000000001 -80.65682200000001,-5.179399,50.00000000000001 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 0101708_PI_Sullana to 0101706_PI_Textil_Piura</name>
+			<description>0101708_PI_Sullana:
+
+0101706_PI_Textil_Piura:</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-80.691338,-4.916732,50.00000000000001 -80.65682200000001,-5.179399,50.00000000000001 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 0104525_LM_Canta_Callao_Ba to 0100540_LM_Repetidor_La_Milla</name>
+			<description>0104525_LM_Canta_Callao_Ba:
+
+0100540_LM_Repetidor_La_Milla:</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-77.088898,-11.9752,50.00000000000001 -77.06886299999999,-12.020964,50.00000000000001 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 0100908_AQ_Yanahuara to 0100903_AQ_El_Palomar</name>
+			<description>0100908_AQ_Yanahuara:
+
+0100903_AQ_El_Palomar:</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-71.5578,-16.406347,50.00000000000001 -71.543854,-16.420238,50.00000000000001 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Link from 0100903_AQ_El_Palomar to 0100909_AQ_Los_Rosales</name>
+			<description>0100903_AQ_El_Palomar:
+
+0100909_AQ_Los_Rosales:</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<LineString>
+				<extrude>1</extrude>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					-71.543854,-16.420238,50.00000000000001 -71.526352,-16.414824,50.00000000000001 
+				</coordinates>
+			</LineString>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Sites</name>
+		<Style id="sitestile37">
+			<IconStyle>
+				<color>ff40ff00</color>
+				<Icon>
+					<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+				</Icon>
+			</IconStyle>
+			<LineStyle>
+				<color>ff40ff00</color>
+				<width>2</width>
+			</LineStyle>
+		</Style>
+		<Placemark>
+			<name>0100004_LM_Aeropuerto</name>
+			<description>Lat: -12.022777
+Lng: -77.103577
+Tower Type: unknown</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.103577,-12.022777,50.00000000000001</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100074_LM_Haya_de_la_Torre</name>
+			<description>Lat: -12.071667
+Lng: -77.110207
+Tower Type: unknown</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.110207,-12.071667,50.00000000000001</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100034_LM_Chorrillos</name>
+			<description>Lat: -12.185929
+Lng: -77.001427
+Tower Type: unknown</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.00142700000001,-12.185929,50.00000000000001</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100033_LM_San_Juan_de_Mirafl</name>
+			<description>Lat: -12.158485
+Lng: -76.976639
+Tower Type: unknown</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-76.97663900000001,-12.158485,50.00000000000001</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100038_LM_Villa_Salvador</name>
+			<description>Lat: -12.209842
+Lng: -76.941940
+Tower Type: unknown</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-76.94194,-12.209842,50.00000000000001</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100544_LM_Repetidor_Morro</name>
+			<description>Lat: -12.182817
+Lng: -77.029396
+Tower Type: unknown</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.02939600000001,-12.182817,50.00000000000001</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100105_LM_Las_Torres</name>
+			<description>Lat: -12.185831
+Lng: -76.950439
+Tower Type: unknown</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-76.950439,-12.185831,50.00000000000001</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100149_LM_Trapiche</name>
+			<description>Lat: -11.926356
+Lng: -77.072014
+Tower Type: unknown</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.072014,-11.926356,50.00000000000001</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100373_LM_Carabayllo</name>
+			<description>Lat: -11.870556
+Lng: -77.059128
+Tower Type: unknown</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.059128,-11.870556,50.00000000000001</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100188_LM_Huachipa</name>
+			<description>Lat: -12.019989
+Lng: -76.918831
+Tower Type: unknown</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-76.918831,-12.019989,50.00000000000001</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100166_LM_TECSUP</name>
+			<description>Lat: -12.045384
+Lng: -76.948952
+Tower Type: unknown</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-76.94895200000001,-12.045384,50.00000000000001</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100540_LM_Repetidor_La_Milla</name>
+			<description>Lat: -12.020964
+Lng: -77.068863
+Tower Type: unknown</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.06886299999999,-12.020964,50.00000000000001</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100390_LM_Quipa</name>
+			<description>Lat: -12.460928
+Lng: -76.771156
+Tower Type: unknown</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-76.77115600000001,-12.460928,50.00000000000001</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100387_LM_Lurin</name>
+			<description>Lat: -12.245306
+Lng: -76.898170
+Tower Type: unknown</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-76.89816999999999,-12.245306,50.00000000000001</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100606_LI_El_Alambre</name>
+			<description>Lat: -8.132423
+Lng: -79.045136
+Tower Type: unknown</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-79.045136,-8.132422999999999,50.00000000000001</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100607_LI_Husares_de_Junin</name>
+			<description>Lat: -8.119293
+Lng: -79.032761
+Tower Type: unknown</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-79.03276099999999,-8.119293000000001,50.00000000000001</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100612_LI_La_Esperanza</name>
+			<description>Lat: -8.079600
+Lng: -79.046371
+Tower Type: unknown</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-79.04637099999999,-8.079599999999999,50.00000000000001</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100632_LI_Peralta</name>
+			<description>Lat: -8.105100
+Lng: -79.010399
+Tower Type: unknown</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-79.01039900000001,-8.1051,50.00000000000001</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100821_IC_Ayabaca</name>
+			<description>Lat: -14.070599
+Lng: -75.733055
+Tower Type: unknown</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-75.73305499999999,-14.070599,50.00000000000001</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100820_IC_Cerro_Prieto</name>
+			<description>Lat: -13.997686
+Lng: -75.789047
+Tower Type: unknown</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-75.789047,-13.997686,50.00000000000001</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100907_AQ_Zamacola</name>
+			<description>Lat: -16.354111
+Lng: -71.571411
+Tower Type: unknown</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-71.571411,-16.354111,50.00000000000001</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100903_AQ_El_Palomar</name>
+			<description>Lat: -16.420238
+Lng: -71.543854
+Tower Type: unknown</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-71.543854,-16.420238,50.00000000000001</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0101302_CS_Cusco_Centro</name>
+			<description>Lat: -13.523922
+Lng: -71.982338
+Tower Type: unknown</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-71.982338,-13.523922,50.00000000000001</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0101301_CS_Wanchaq</name>
+			<description>Lat: -13.527722
+Lng: -71.956757
+Tower Type: unknown</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-71.956757,-13.527722,50.00000000000001</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0101314_CS_Sol_de_Oro</name>
+			<description>Lat: -13.525444
+Lng: -71.915916
+Tower Type: unknown</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-71.915916,-13.525444,50.00000000000001</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0101405_PN_Llallahuani</name>
+			<description>Lat: -15.813206
+Lng: -70.016800
+Tower Type: unknown</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-70.0168,-15.813206,50.00000000000001</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0101406_PN_Juliaca_Cerro</name>
+			<description>Lat: -15.496886
+Lng: -70.136299
+Tower Type: unknown</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-70.13629899999999,-15.496886,50.00000000000001</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0101539_CA_Cerro_Cumbemayo</name>
+			<description>Lat: -7.163520
+Lng: -78.525350
+Tower Type: unknown</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-78.52535,-7.163520000000001,50.00000000000001</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0101509_CA_El_Quinde</name>
+			<description>Lat: -7.151270
+Lng: -78.506950
+Tower Type: unknown</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-78.50695,-7.15127,50.00000000000001</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0103082_JU_El_Tambo_R1</name>
+			<description>Lat: -12.039903
+Lng: -75.224428
+Tower Type: unknown</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-75.224428,-12.039903,50.00000000000001</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0101601_JU_Huancayo_Centro</name>
+			<description>Lat: -12.069083
+Lng: -75.210556
+Tower Type: unknown</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-75.210556,-12.069083,50.00000000000001</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0101704_PI_Piura_Centro</name>
+			<description>Lat: -5.196700
+Lng: -80.625854
+Tower Type: unknown</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-80.625854,-5.1967,50.00000000000001</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0101706_PI_Textil_Piura</name>
+			<description>Lat: -5.179399
+Lng: -80.656822
+Tower Type: unknown</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-80.65682200000001,-5.179399,50.00000000000001</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0101708_PI_Sullana</name>
+			<description>Lat: -4.916732
+Lng: -80.691338
+Tower Type: unknown</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-80.691338,-4.916732,50.00000000000001</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0104525_LM_Canta_Callao_Ba</name>
+			<description>Lat: -11.975200
+Lng: -77.088898
+Tower Type: unknown</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.088898,-11.9752,50.00000000000001</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100908_AQ_Yanahuara</name>
+			<description>Lat: -16.406347
+Lng: -71.557800
+Tower Type: unknown</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-71.5578,-16.406347,50.00000000000001</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0100909_AQ_Los_Rosales</name>
+			<description>Lat: -16.414824
+Lng: -71.526352
+Tower Type: unknown</description>
+			<styleUrl>#linkstile122</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-71.526352,-16.414824,50.00000000000001</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

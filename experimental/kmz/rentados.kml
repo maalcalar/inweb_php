@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>KMZ Sites Rentados Nov2018</name>
+	<visibility>0</visibility>
+	<Style id="sitestile11106">
+		<IconStyle>
+			<color>ff7f00aa</color>
+			<scale>0.9</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/R.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/R-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sitestile175">
+		<IconStyle>
+			<color>ff7f00aa</color>
+			<scale>0.9</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/R.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/R-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+		<LineStyle>
+			<color>ff40ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="sitestile10106">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sitestile175</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sitestile11106</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>Sites</name>
+		<visibility>0</visibility>
+		<Style id="sitestile37">
+			<IconStyle>
+				<color>ff40ff00</color>
+				<Icon>
+					<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+				</Icon>
+			</IconStyle>
+			<LineStyle>
+				<color>ff40ff00</color>
+				<width>2</width>
+			</LineStyle>
+		</Style>
+		<Placemark>
+			<name>0101306_CS_Aguas_Calientes</name>
+			<visibility>0</visibility>
+			<description>Lat: -13.154144
+Lng: -72.527618
+Tower Type: unknown</description>
+			<styleUrl>#sitestile10106</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-72.527618,-13.154144,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0101325_CS_Machupicchu</name>
+			<visibility>0</visibility>
+			<description>Lat: -13.166792
+Lng: -72.543220
+Tower Type: unknown</description>
+			<styleUrl>#sitestile10106</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-72.54322000000001,-13.166792,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0102325_SM_Juanjui</name>
+			<visibility>0</visibility>
+			<description>Lat: -7.178833
+Lng: -76.726611
+Tower Type: unknown</description>
+			<styleUrl>#sitestile10106</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-76.72661100000001,-7.178833,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0102777_CS_Santa_Teresa</name>
+			<visibility>0</visibility>
+			<description>Lat: -13.126589
+Lng: -72.597269
+Tower Type: unknown</description>
+			<styleUrl>#sitestile10106</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-72.597269,-13.126589,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0103675_CS_Quillabamba_Ciudad</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.863600
+Lng: -72.694700
+Tower Type: unknown</description>
+			<styleUrl>#sitestile10106</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-72.6947,-12.8636,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0104744_CA_Bambamarca_Ciudad</name>
+			<visibility>0</visibility>
+			<description>Lat: -6.680778
+Lng: -78.519056
+Tower Type: unknown</description>
+			<styleUrl>#sitestile10106</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-78.51905600000001,-6.680778,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0101586_CA_Chota</name>
+			<visibility>0</visibility>
+			<description>Lat: -6.558920
+Lng: -78.650600
+Tower Type: unknown</description>
+			<styleUrl>#sitestile10106</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-78.6506,-6.558919999999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0104372_PI_Cerro_Huancabamba</name>
+			<visibility>0</visibility>
+			<description>Lat: -5.242597
+Lng: -79.463230
+Tower Type: unknown</description>
+			<styleUrl>#sitestile10106</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-79.46323,-5.242597,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0102371_AQ_Chivay</name>
+			<visibility>0</visibility>
+			<description>Lat: -15.637167
+Lng: -71.603194
+Tower Type: unknown</description>
+			<styleUrl>#sitestile10106</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-71.603194,-15.637167,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0105771_LM_Cow_Plomopampa</name>
+			<visibility>0</visibility>
+			<description>Lat: -10.635710
+Lng: -76.687510
+Tower Type: unknown</description>
+			<styleUrl>#sitestile10106</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-76.68751,-10.63571,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0103638_HU_LIRCAY</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.983111
+Lng: -74.719306
+Tower Type: unknown</description>
+			<styleUrl>#sitestile10106</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-74.719306,-12.983111,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0102328_LM_Ayacucho_R1</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.133058
+Lng: -76.995532
+Tower Type: unknown</description>
+			<styleUrl>#sitestile10106</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-76.995532,-12.133058,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0105775_LM_SAN_LUIS_VMT</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.147830
+Lng: -76.942862
+Tower Type: unknown</description>
+			<styleUrl>#sitestile10106</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-76.94286200000001,-12.14783,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0105641_LM_Cow_industrial</name>
+			<visibility>0</visibility>
+			<description>Lat: -10.635180
+Lng: -76.688290
+Tower Type: unknown</description>
+			<styleUrl>#sitestile10106</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-76.68829,-10.63518,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0102392_SM_Banda_Alta</name>
+			<visibility>0</visibility>
+			<description>Lat: -6.487972
+Lng: -76.349417
+Tower Type: unknown</description>
+			<styleUrl>#sitestile10106</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-76.349417,-6.487971999999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0105038_LM_Palmeras_De_Chosica</name>
+			<visibility>0</visibility>
+			<description>Lat: -11.930310
+Lng: -76.702280
+Tower Type: unknown</description>
+			<styleUrl>#sitestile10106</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-76.70228,-11.93031,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0104806_LM_IB_ERN</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.093428
+Lng: -77.026721
+Tower Type: unknown</description>
+			<styleUrl>#sitestile10106</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.026721,-12.093428,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0102963_AY_Huancapi_Principal</name>
+			<visibility>0</visibility>
+			<description>Lat: -13.750100
+Lng: -74.055800
+Tower Type: unknown</description>
+			<styleUrl>#sitestile10106</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-74.05580000000001,-13.7501,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0103342_AN_Pomabamba</name>
+			<visibility>0</visibility>
+			<description>Lat: -8.823490
+Lng: -77.474300
+Tower Type: unknown</description>
+			<styleUrl>#sitestile10106</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.4743,-8.82349,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0102083_AQ_Caraveli</name>
+			<visibility>0</visibility>
+			<description>Lat: -15.772900
+Lng: -73.365750
+Tower Type: unknown</description>
+			<styleUrl>#sitestile10106</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-73.36575000000001,-15.7729,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0103799_AY_Coracora</name>
+			<visibility>0</visibility>
+			<description>Lat: -15.021800
+Lng: -73.775600
+Tower Type: unknown</description>
+			<styleUrl>#sitestile10106</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-73.7756,-15.0218,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0102089_AY_Pausa</name>
+			<visibility>0</visibility>
+			<description>Lat: -15.289417
+Lng: -73.351778
+Tower Type: unknown</description>
+			<styleUrl>#sitestile10106</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-73.351778,-15.289417,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0103798_AY_Puquio</name>
+			<visibility>0</visibility>
+			<description>Lat: -14.692100
+Lng: -74.138890
+Tower Type: unknown</description>
+			<styleUrl>#sitestile10106</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-74.13889,-14.6921,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0102960_CS_Santo_Tomas</name>
+			<visibility>0</visibility>
+			<description>Lat: -14.451510
+Lng: -72.085390
+Tower Type: unknown</description>
+			<styleUrl>#sitestile10106</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-72.08539,-14.45151,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0102189_MD_Inapari</name>
+			<visibility>0</visibility>
+			<description>Lat: -10.955611
+Lng: -69.578150
+Tower Type: unknown</description>
+			<styleUrl>#sitestile10106</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-69.57814999999999,-10.955611,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0103889_CP_COW_Yanahuanca</name>
+			<visibility>0</visibility>
+			<description>Lat: -10.492410
+Lng: -76.516750
+Tower Type: unknown</description>
+			<styleUrl>#sitestile10106</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-76.51675,-10.49241,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0102051_AN_Chiquian</name>
+			<visibility>0</visibility>
+			<description>Lat: -10.152583
+Lng: -77.156940
+Tower Type: unknown</description>
+			<styleUrl>#sitestile10106</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.15694000000001,-10.152583,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0102073_AP_Chalhuanca</name>
+			<visibility>0</visibility>
+			<description>Lat: -14.288900
+Lng: -73.247100
+Tower Type: unknown</description>
+			<styleUrl>#sitestile10106</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-73.2471,-14.2889,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0102204_TA_Candarave</name>
+			<visibility>0</visibility>
+			<description>Lat: -17.269972
+Lng: -70.249583
+Tower Type: unknown</description>
+			<styleUrl>#sitestile10106</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-70.249583,-17.269972,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0104269_CS_Echarate_Ciudad</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.769400
+Lng: -72.577200
+Tower Type: unknown</description>
+			<styleUrl>#sitestile10106</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-72.57720000000001,-12.7694,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0103897_LM_Yauyos</name>
+			<visibility>0</visibility>
+			<description>Lat: -12.458822
+Lng: -75.918891
+Tower Type: unknown</description>
+			<styleUrl>#sitestile10106</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-75.918891,-12.458822,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0102054_AN_Llamellin</name>
+			<visibility>0</visibility>
+			<description>Lat: -9.101300
+Lng: -77.025190
+Tower Type: unknown</description>
+			<styleUrl>#sitestile10106</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.02519,-9.1013,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0102085_AQ_Cotahuasi</name>
+			<visibility>0</visibility>
+			<description>Lat: -15.212700
+Lng: -72.889600
+Tower Type: unknown</description>
+			<styleUrl>#sitestile10106</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-72.8896,-15.2127,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0102857_PN_Macusani</name>
+			<visibility>0</visibility>
+			<description>Lat: -14.064056
+Lng: -70.441750
+Tower Type: unknown</description>
+			<styleUrl>#sitestile10106</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-70.44175,-14.064056,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0103891_AN_Recuay</name>
+			<visibility>0</visibility>
+			<description>Lat: -9.726494
+Lng: -77.445542
+Tower Type: unknown</description>
+			<styleUrl>#sitestile10106</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.445542,-9.726494000000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0103185_AP_Chuquibambilla</name>
+			<visibility>0</visibility>
+			<description>Lat: -14.104194
+Lng: -72.709028
+Tower Type: unknown</description>
+			<styleUrl>#sitestile10106</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-72.709028,-14.104194,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0102169_LI_Tayabamba</name>
+			<visibility>0</visibility>
+			<description>Lat: -8.278744
+Lng: -77.298900
+Tower Type: unknown</description>
+			<styleUrl>#sitestile10106</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-77.2989,-8.278744,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

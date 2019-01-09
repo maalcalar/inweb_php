@@ -1,0 +1,175 @@
+{% extends "base/web.twig" %}
+
+{% set page_title = "Lista de Enlaces" %}
+
+{% block plugin_stylesheets %}
+    <link rel="stylesheet" href="{{ TwigFunctions('app_root') }}resources/views/vendor/datatables.net-bs4/dataTables.bootstrap4.min.css">
+{% endblock %}
+
+{% block page_content %}
+    <div class="page">
+        <div class="page-header">
+            <h1 class="page-title">Lista de Enlaces</h1>
+            <p class="page-description">
+                Administrador:
+                <a href="mailto:elvis.silva@entel.pe?Subject=Feedback Lista de Enlaces" target="_top">
+                    Elvis Silva
+                </a>
+            </p>
+            <div class="page-header-actions">
+                <div class="btn-group btn-group-sm" aria-label="Page Header Actions" role="group">
+                    <button type="button" class="btn btn-primary">
+                        <i class="icon md-download" aria-hidden="true"></i>
+                        <span class="hidden-sm-down">Exportar Excel</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="panel panel-primary panel-line">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Enlaces</h3>
+                </div>
+                <div class="panel-body">
+                    <table id="enlaces-lista" class="table table-bordered table-striped w-full text-nowrap table-sm">
+                        <thead>
+                        <tr class="text-center bg-blue-800">
+                            <th></th>
+                            <th class="white">SOURCE_SITE</th>
+                            <th class="white">SINK_SITE</th>
+                            <th class="white">ESTADO</th>
+                            <th class="white text-center">UTILIZACIÓN</th>
+                            <th class="white">MEDIO</th>
+                            <th class="white">LINK_PORTS</th>
+                            <th class="white">CAPACIDAD</th>
+                            <th class="white">RESOURCE_NAME</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for enlace in enlaces %}
+                            <tr>
+                                <td>
+                                </td>
+                                <td>{{ enlace.SOURCE_SITE }}</td>
+                                <td>{{ enlace.SINK_SITE }}</td>
+                                <td class="text-center">
+                                {% if enlace.RESOURCE_NAME is empty %}
+                                    <span class="badge badge-dark">sin-instancia</span>
+                                {% elseif enlace.UTILIZACION > 80.0 %}
+                                    <span class="badge badge-danger">danger</span>
+                                {% elseif enlace.UTILIZACION > 50 %}
+                                    <span class="badge badge-warning">warning</span>
+                                {% elseif enlace.UTILIZACION > 1 %}
+                                    <span class="badge badge-success">ok</span>
+                                {% elseif enlace.UTILIZACION >= 0 %}
+                                    <span class="badge badge-default">observado</span>
+                                {% endif %}
+                                </td>
+                                <td class="text-center">{{ enlace.UTILIZACION }}</td>
+                                <td>{{ enlace.MEDIO }}</td>
+                                <td class="text-center">{{ enlace.LINK_PORTS }}</td>
+                                <td class="text-center">{{ enlace.CAPACIDAD }}</td>
+                                <td>{{ enlace.RESOURCE_NAME }}</td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                        <tfoot>
+                        <tr class="text-center">
+                            <th></th>
+                            <th><input type="text" class="form-control form-control-sm" placeholder="SOURCE_SITE"></th>
+                            <th><input type="text" class="form-control form-control-sm" placeholder="SINK_SITE"></th>
+                            <th>
+                                <select class="form-control form-control-sm">
+                                    <option value="">
+                                        ESTADO
+                                    </option>
+                                </select>
+                            </th>
+                            <th><input type="text" class="form-control form-control-sm" placeholder="UTILIZACION"></th>
+                            <th>
+                                <select class="form-control form-control-sm">
+                                    <option value="">
+                                        MEDIO
+                                    </option>
+                                </select>
+                            </th>
+                            <th><input type="text" class="form-control form-control-sm" placeholder="LINK_PORTS"></th>
+                            <th><input type="text" class="form-control form-control-sm" placeholder="CAPACIDAD"></th>
+                            <th><input type="text" class="form-control form-control-sm" placeholder="RESOURCE_NAME"></th>
+                        </tr>
+                        </tfoot>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block js_plugins %}
+    <script src="{{ TwigFunctions('app_root') }}resources/views/vendor/datatables.net/jquery.dataTables.js"></script>
+    <script src="{{ TwigFunctions('app_root') }}resources/views/vendor/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+{% endblock %}
+
+
+{% block js_page %}
+    <script src="{{ TwigFunctions('app_root') }}resources/views/js/Plugin/datatables.js"></script>
+    <script>
+        var backhaul_inventario_equipos;
+        backhaul_inventario_equipos = $('#enlaces-lista').DataTable({
+            "stateSave": false,
+            "scrollX": true,
+            "scrollCollapse": true,
+            "pagingType": "full_numbers",
+            "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "Todos"]],
+            "ordering": true,
+            "order": [[4,"desc"]],
+            "language": {
+                "search": "",
+                "sSearchPlaceholder": "Buscar...",
+                "infoEmpty": "0 resultados",
+                "sEmptyTable": "No hay información para mostrar",
+                "zeroRecords": "No hay resultados para su búsqueda",
+                "sInfo": "Enlaces del _START_ al _END_ de _TOTAL_",
+                "infoFiltered": "(de un total de _MAX_ enlaces)",
+                "lengthMenu": "_MENU_",
+                "loadingRecords": '<div class="loader vertical-align-middle loader-bounce h-50 w-50"></div> Por favor espere, cargando datos...',
+                "processing": '<div class="loader vertical-align-middle loader-bounce h-50 w-50"></div> El servidor esta ocupado actualmente',
+                "paginate": {
+                    "first": "Primero",
+                    "last": "Último",
+                    "next": "Siguiente",
+                    "previous": "Anterior"
+                }
+            },
+            initComplete: function() {
+                this.api().columns().every(function () {
+                    var that = this;
+                    $('input', this.footer()).on('keyup change', function () {
+                        if (that.search() !== this.value)
+                            that.search(this.value).draw();
+                    });
+                });
+                this.api().columns([5]).every( function (){
+                    var column = this;
+                    var select = $('<select class="form-control form-control-sm"><option value=""></option></select>').
+                    appendTo( $(column.footer()).empty() ).on( 'change', function() {
+                        var val = $.fn.dataTable.util.escapeRegex( $(this).val() );
+                        column.search( val ? '^'+val+'$' : '', true, false ).draw();
+                    });
+                    column.data().unique().sort().each( function ( d, j ) {
+                        select.append('<option value="'+d+'">'+d+'</option>');
+                    });
+                });
+                this.api().columns([3]).every( function (){
+                    var column = this;
+                    var select = $('<select class="form-control form-control-sm"><option value=""></option><option value="danger">danger</option><option value="warning">warning</option><option value="ok">ok</option><option value="observado">observado</option><option value="sin-instancia">sin-instancia</option></select>').
+                    appendTo( $(column.footer()).empty() ).on( 'change', function() {
+                        var val = $.fn.dataTable.util.escapeRegex( $(this).val() );
+                        column.search( val ? '^'+val+'$' : '', true, false ).draw();
+                    });
+                });
+            }
+        });
+    </script>
+{% endblock %}

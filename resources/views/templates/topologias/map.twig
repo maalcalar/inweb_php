@@ -1,0 +1,178 @@
+{% extends "base/web.twig" %}
+
+{% set page_title = "Constelación por Site" %}
+
+{% block stylesheets %}
+    <style>
+        .page-aside {
+            width: 350px;
+        }
+        .page-main,.page-content,#div-map-topologia {
+            height: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            #padding: 10px 10px 20px 10px;
+        }
+        .page-main {
+            background: #1c2833 !important;
+        }
+        .page-aside-left .page-aside {
+            z-index: 1;
+        }
+        .page-aside .list-group-item {
+            white-space: unset;
+        }
+        .page-aside-fixed .page-aside-inner {
+            height: 100%;
+            overflow-y: scroll;
+        }
+        .page-aside-left .page-aside+.page-main {
+            margin-left: 350px;
+        }
+    </style>
+{% endblock %}
+
+{% block plugin_stylesheets %}
+    <link rel="stylesheet" href="{{ TwigFunctions('app_root') }}resources/views/vendor/select2/select2.min.css">
+    <link rel="stylesheet" href="{{ TwigFunctions('app_root') }}resources/views/vendor/sparkline/sparkline.min.css">
+    <link rel="stylesheet" href="{{ TwigFunctions('app_root') }}resources/views/vendor/vis/vis.css">
+{% endblock %}
+
+{% block page_content %}
+    <div class="page">
+        <div class="page-aside">
+            <div class="h-full page-aside-inner page-aside-scroll">
+                <div data-role="container">
+                    <div data-role="content">
+                        <section class="page-aside-section pt-0">
+                            <h5 class="page-aside-title m-0 p-10">Site-Link Map</h5>
+                            <p class="px-10 m-0 font-size-12 pt-0 pb-10">
+                                Administrador:
+                                <a href="mailto:jonathan.arancibia@entel.pe?Subject=Feedback Site-Link Constelation" target="_top">
+                                    Jonathan Arancibia
+                                </a>
+                            </p>
+                            <button id="button-map-graficar" class="btn btn-primary waves-effect waves-light waves-round w-full">Graficar</button>
+                            <div id="loading-map-graficar" class="text-center d-none"><div class="loader vertical-align-middle loader-bounce h-50 w-50 mt-20"></div></div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-main">
+            <div class="page-content">
+                <div id="div-map-topologia"></div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block js_plugins %}
+    <script src="{{ TwigFunctions('app_root') }}resources/views/vendor/select2/select2.full.min.js"></script>
+    <script src="{{ TwigFunctions('app_root') }}resources/views/vendor/sparkline/jquery.sparkline.min.js"></script>
+{% endblock %}
+
+{% block js_page %}
+    <script src="{{ TwigFunctions('app_root') }}resources/views/js/Plugin/select2.js"></script>
+    <script>
+/*
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('div-map-topologia'), {
+                zoom: 5,
+                center: new google.maps.LatLng(-9.321017,-74.5572897)
+            });
+
+            var ctaLayer = new google.maps.KmlLayer({
+                url: 'http://10.30.17.81:81/inweb/experimental/kmz/Links.kml',
+                map: map
+            });
+        }
+        */
+        function customIcon (opts) {
+            return Object.assign({
+                path: 'M 0,0 C -2,-20 -10,-22 -10,-30 A 10,10 0 1,1 10,-30 C 10,-22 2,-20 0,0 z M -2,-30 a 2,2 0 1,1 4,0 2,2 0 1,1 -4,0',
+                fillColor: '#34495e',
+                fillOpacity: 1,
+                strokeColor: '#000',
+                strokeWeight: 2,
+                scale: 1,
+            }, opts);
+        }
+        function initMap() {
+
+            $.ajax({
+                method: 'GET',
+                url: 'map/agregadores'
+            }).done(function(response) {
+                var json = JSON.parse(response);
+                var locations = json.sites;
+                var links = json.links;
+
+                var map = new google.maps.Map(document.getElementById('div-map-topologia'), {
+                    zoom: 5,
+                    center: new google.maps.LatLng(-9.321017,-74.5572897),
+                    mapTypeId: google.maps.MapTypeId.HYBRID,
+                    styles:  [
+                        {
+                            featureType: 'poi',
+                            stylers: [{visibility: 'off'}]
+                        },
+                        {
+                            featureType: 'transit',
+                            stylers: [{visibility: 'off'}]
+                        },
+                        {
+                            featureType: 'road',
+                            stylers: [{visibility: 'off'}]
+                        }
+                    ],
+                    mapTypeControl: false,
+
+                });
+
+                var infowindow = new google.maps.InfoWindow;
+
+                var marker, i;
+                var image = 'http://www.evlsolutions.com/images/service-icon.png';
+                for (i = 0; i < locations.length; i++) {
+                    marker = new google.maps.Marker({
+                        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                        map: map,
+                        icon: customIcon({
+                            fillColor: locations[i][4]
+                        }),
+                        //label: locations[i][3]
+                    });
+
+                    google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                        return function() {
+                            infowindow.setContent(locations[i][0]);
+                            infowindow.open(map, marker);
+                        }
+                    })(marker, i));
+                }
+                var line, i;
+                for (i = 0; i < links.length; i++) {
+                    line = new google.maps.Polyline({
+                        path: links[i][0],
+                        geodesic: true,
+                        strokeColor: links[i][6],
+                        strokeOpacity: 1.0,
+                        strokeWeight: 2
+                    });
+
+                line.setMap(map);
+                google.maps.event.addListener(line, 'click', function(event) {
+                    alert(links[i][1] + " - " + links[i][1]);
+                });
+            }
+            });
+        }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtdryLDHIql6lmW0qsy7HhLXXCGBtDR_U&callback=initMap" async defer></script>
+{% endblock %}

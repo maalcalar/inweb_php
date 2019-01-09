@@ -1,0 +1,10 @@
+
+Here is problem: Array
+(
+    [type] => 8
+    [message] => Undefined index: REQUEST_URI
+    [file] => /var/www/new_inweb/inweb/scripts/pag_monitor.php
+    [line] => 35
+)
+
+2018-12-04 17:25:51 - REMOTE_ADDR_UNKNOWN - REQUEST_URI_UNKNOWN 

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html class="no-js css-menubar" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="InWeb">
+    <meta name="author" content="Jonathan Arancibia jonathan.arancibia@entel.pe">
+
+    <title>InWeb Entel{% if page_title is defined %} | {{ page_title }}{% endif %}</title>
+
+    <link rel="shortcut icon" href="{{ TwigFunctions('app_root') }}resources/views/img/favicon.ico">
+
+    <!-- Stylesheets -->
+    {% block stylesheets %}
+        <link rel="stylesheet" href="{{ TwigFunctions('app_root') }}resources/views/vendor/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ TwigFunctions('app_root') }}resources/views/vendor/bootstrap/bootstrap-extend.min.css">
+        <link rel="stylesheet" href="{{ TwigFunctions('app_root') }}resources/views/css/site.min.css">
+        <link rel="stylesheet" href="{{ TwigFunctions('app_root') }}resources/views/css/skins/blue.css">
+    {% endblock %}
+
+    <!-- Plugins -->
+    {% block plugin_stylesheets %}
+        <link rel="stylesheet" href="{{ TwigFunctions('app_root') }}resources/views/vendor/animsition/animsition.css">
+        <link rel="stylesheet" href="{{ TwigFunctions('app_root') }}resources/views/vendor/asscrollable/asScrollable.css">
+        <link rel="stylesheet" href="{{ TwigFunctions('app_root') }}resources/views/vendor/switchery/switchery.css">
+        <link rel="stylesheet" href="{{ TwigFunctions('app_root') }}resources/views/vendor/intro-js/introjs.css">
+        <link rel="stylesheet" href="{{ TwigFunctions('app_root') }}resources/views/vendor/slidepanel/slidePanel.css">
+        <link rel="stylesheet" href="{{ TwigFunctions('app_root') }}resources/views/vendor/flag-icon-css/flag-icon.css">
+        <link rel="stylesheet" href="{{ TwigFunctions('app_root') }}resources/views/vendor/waves/waves.css">
+
+        <link rel="stylesheet" href="{{ TwigFunctions('app_root') }}resources/views/css/extras/login-v3.min.css">
+    {% endblock %}
+
+    <!-- Fonts -->
+    {% block fonts %}
+        <link rel="stylesheet" href="{{ TwigFunctions('app_root') }}resources/views/fonts/font-awesome/font-awesome.min.css">
+        <link rel="stylesheet" href="{{ TwigFunctions('app_root') }}resources/views/fonts/material-design/material-design.min.css">
+        <link rel="stylesheet" href="{{ TwigFunctions('app_root') }}resources/views/fonts/brand-icons/brand-icons.min.css">
+        <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+    {% endblock %}
+
+    <!--[if lt IE 9]>
+    <script src="{{ TwigFunctions('app_root') }}resources/views/vendor/html5shiv/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!--[if lt IE 10]>
+    <script src="{{ TwigFunctions('app_root') }}resources/views/vendor/media-match/media.match.min.js"></script>
+    <script src="{{ TwigFunctions('app_root') }}resources/views/vendor/respond/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Scripts -->
+    <script src="{{ TwigFunctions('app_root') }}resources/views/vendor/breakpoints/breakpoints.js"></script>
+    <script>
+        Breakpoints();
+    </script>
+</head>
+<body class="animsition page-login-v3 layout-full">
+    <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- Page -->
+
+    <div class="page vertical-align text-center" data-animsition-in="fade-in" data-animsition-out="fade-out">
+        <div class="page-content vertical-align-middle">
+            <div class="panel">
+                <div class="panel-body">
+                    <div class="brand">
+                        <img class="brand-img" height="50" src="{{ TwigFunctions('app_root') }}resources/views/img/entel2.png" alt="..."/>
+                    </div>
+                    {{ TwigFunctions('flash', ['errors', 'danger']) | raw }}
+                    {{ TwigFunctions('flash', ['notificacion', 'info']) | raw }}
+                    <form class="mt-0" method="post" action="login" autocomplete="off">
+                        <div class="form-group form-material floating" data-plugin="formMaterial">
+                            <input type="text" class="form-control" name="user" value="{{ TwigFunctions('flash', ['post']).user }}"/>
+                            <label class="floating-label">
+                                Usuario
+                            </label>
+                        </div>
+                        <div class="form-group form-material floating" data-plugin="formMaterial">
+                            <input type="password" class="form-control" name="pass"/>
+                            <label class="floating-label">
+                                Contraseña
+                            </label>
+                        </div>
+                        <button type="submit" name="login" class="btn btn-primary btn-block btn-lg mt-40">
+                            Acceder
+                        </button>
+                    </form>
+                    <p>
+                        Para acceder utilice su Usuario y Contraseña Entel.
+                    </p>
+                </div>
+            </div>
+            <footer class="page-copyright page-copyright-inverse font-size-16 mt-20">
+                <p>
+                    Gerencia de Construcción e Infraestructura de Red<br>© 2018
+                </p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- End Page -->
+    <!-- Footer -->
+    <!-- Core  -->
+    {% block js_core %}
+        <script src="{{ TwigFunctions('app_root') }}resources/views/vendor/babel-external-helpers/babel-external-helpers.js"></script>
+        <script src="{{ TwigFunctions('app_root') }}resources/views/vendor/jquery/jquery.js"></script>
+        <script src="{{ TwigFunctions('app_root') }}resources/views/vendor/popper-js/umd/popper.min.js"></script>
+        <script src="{{ TwigFunctions('app_root') }}resources/views/vendor/bootstrap/bootstrap.js"></script>
+        <script src="{{ TwigFunctions('app_root') }}resources/views/vendor/animsition/animsition.js"></script>
+        <script src="{{ TwigFunctions('app_root') }}resources/views/vendor/mousewheel/jquery.mousewheel.js"></script>
+        <script src="{{ TwigFunctions('app_root') }}resources/views/vendor/asscrollbar/jquery-asScrollbar.js"></script>
+        <script src="{{ TwigFunctions('app_root') }}resources/views/vendor/asscrollable/jquery-asScrollable.js"></script>
+        <script src="{{ TwigFunctions('app_root') }}resources/views/vendor/waves/waves.js"></script>
+    {% endblock %}
+    <!-- Plugins -->
+    {% block js_plugins %}
+        <script src="{{ TwigFunctions('app_root') }}resources/views/vendor/switchery/switchery.js"></script>
+        <script src="{{ TwigFunctions('app_root') }}resources/views/vendor/intro-js/intro.js"></script>
+        <script src="{{ TwigFunctions('app_root') }}resources/views/vendor/screenfull/screenfull.js"></script>
+        <script src="{{ TwigFunctions('app_root') }}resources/views/vendor/slidepanel/jquery-slidePanel.js"></script>
+    {% endblock %}
+
+    <!-- Scripts -->
+    <script src="{{ TwigFunctions('app_root') }}resources/views/js/Component.js"></script>
+    <script src="{{ TwigFunctions('app_root') }}resources/views/js/Plugin.js"></script>
+    <script src="{{ TwigFunctions('app_root') }}resources/views/js/Base.js"></script>
+    <script src="{{ TwigFunctions('app_root') }}resources/views/js/Config.js"></script>
+    <script src="{{ TwigFunctions('app_root') }}resources/views/js/core/Section/Menubar.js"></script>
+    <script src="{{ TwigFunctions('app_root') }}resources/views/js/core/Section/Sidebar.js"></script>
+    <script src="{{ TwigFunctions('app_root') }}resources/views/js/core/Section/PageAside.js"></script>
+    <script src="{{ TwigFunctions('app_root') }}resources/views/js/core/Plugin/menu.js"></script>
+    <!-- Config -->
+    <script src="{{ TwigFunctions('app_root') }}resources/views/js/config/colors.js"></script>
+    <script src="{{ TwigFunctions('app_root') }}resources/views/js/core/config/tour.js"></script>
+    <script>Config.set('assets', "{{ TwigFunctions('app_root') }}resources/views/js/core/");</script>
+    <!-- Page -->
+
+    {% block js_page %}
+        <script src="{{ TwigFunctions('app_root') }}resources/views/js/core/Site.js"></script>
+        <script src="{{ TwigFunctions('app_root') }}resources/views/js/Plugin/asscrollable.js"></script>
+        <script src="{{ TwigFunctions('app_root') }}resources/views/js/Plugin/slidepanel.js"></script>
+        <script src="{{ TwigFunctions('app_root') }}resources/views/js/Plugin/switchery.js"></script>
+        <script src="{{ TwigFunctions('app_root') }}resources/views/js/Plugin/jquery-placeholder.js"></script>
+        <script src="{{ TwigFunctions('app_root') }}resources/views/js/Plugin/material.js"></script>
+    {% endblock %}
+
+    <script>
+        (function(document, window, $){
+            'use strict';
+
+            var Site = window.Site;
+            $(document).ready(function(){
+                Site.run();
+            });
+        })(document, window, jQuery);
+    </script>
+</body>
+</html>
