@@ -75,6 +75,8 @@
                             </h5>
                             <div class="list-group">
                                 <div id="loading-constelacion-detalles" class="d-none loader vertical-align-middle loader-bounce h-50 w-50 mt-20"></div>
+                            </div>
+                            <div class="datos-enlace list-group">
                                 <span class="px-15 bg-blue-grey-900 sparkline-normalline px-15"></span>
                                 <a class="list-group-item p-5" href="javascript:void(0)" id="info-source-site"></a>
                                 <a class="list-group-item p-5" href="javascript:void(0)" id="info-source-ne"></a>
@@ -112,12 +114,14 @@
     <script>
         function update_sparklines(id) {
             $('#loading-constelacion-detalles').removeClass('d-none');
+            $('.datos-enlace').hide();
             $.ajax({
                 method: 'GET',
                 url: 'constelacion/linkSparkline/'+id
             }).done(function(response) {
                 var json = JSON.parse(response);
                 if(json.success) {
+                    $('.datos-enlace').show();
                     $.each(json.info, function (key,value) {
                         $('#info-'+key).html(value);
                     });
