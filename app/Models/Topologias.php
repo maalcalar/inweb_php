@@ -230,7 +230,7 @@ class Topologias extends OracleDB {
         $response = [];
         $response['success'] = true;
 
-        $sql = "SELECT * FROM DVL_ENLACES WHERE ENLACE_ID = $id";
+        $sql = "SELECT E.*, EI.MEDIO, EI.UTILIZACION, EI.INSTANCIA AS RESOURCE_NAME, EI.CAPACIDAD FROM DVL_U2000_ENLACES E JOIN DVL_ENLACES_INSTANCIA EI ON EI.ENLACE_ID = E.ENLACES_INSTANCIA_ID WHERE E.ENLACE_ID = $id AND E.FECHA = (SELECT MAX(FECHA) FROM DVL_U2000_ENLACES)";
         self::ejecutar($sql);
 
         $response['info']['source-site'] = '<span class="text-success">SrcSite: </span>' . self::$results[0]['SOURCE_SITE'];
