@@ -15,14 +15,14 @@ class Topologias extends OracleDB {
     }
 
     public function getAllSites () {
-        $sql = "SELECT DISTINCT SITE_NOMBRE FROM (SELECT DISTINCT SOURCE_SITE AS SITE_NOMBRE FROM DVL_U2000_ENLACES UNION SELECT DISTINCT SINK_SITE AS SITE_NOMBRE FROM DVL_U2000_ENLACES) WHERE SITE_NOMBRE IS NOT NULL ORDER BY SITE_NOMBRE";
+        $sql = "SELECT DISTINCT SITE_NOMBRE FROM (SELECT DISTINCT SOURCE_SITE AS SITE_NOMBRE FROM DVL_U2000_ENLACES WHERE FECHA = (SELECT MAX(FECHA) FROM DVL_U2000_ENLACES) UNION SELECT DISTINCT SINK_SITE AS SITE_NOMBRE FROM DVL_U2000_ENLACES WHERE FECHA = (SELECT MAX(FECHA) FROM DVL_U2000_ENLACES)) WHERE SITE_NOMBRE IS NOT NULL ORDER BY SITE_NOMBRE";
         self::ejecutar($sql);
         return self::$results;
     }
 
     public function constelacion_estrella (string $site) {
         $gateways = [];
-        $sql = "SELECT DISTINCT SITE_NOMBRE FROM DVL_NE WHERE GATEWAY_TYPE = 'Gateway' AND SITE_NOMBRE IS NOT NULL";
+        $sql = "SELECT DISTINCT SITE_NOMBRE FROM DVL_U2000_NE WHERE GATEWAY_TYPE = 'Gateway' AND SITE_NOMBRE IS NOT NULL AND FECHA = (SELECT MAX(FECHA) FROM DVL_U2000_NE)";
         self::ejecutar($sql);
         for($i = 0 ; $i < self::$nrows ; $i++) {
             $gateways[] = self::$results[$i]['SITE_NOMBRE'];
@@ -30,7 +30,7 @@ class Topologias extends OracleDB {
 
         $response = [];
         $nodos = [];
-        $sql = "SELECT * FROM DVL_ENLACES WHERE SOURCE_SITE = '$site' OR SINK_SITE = '$site'";
+        $sql = "SELECT E.*, EI.MEDIO, EI.UTILIZACION, EI.INSTANCIA AS RESOURCE_NAME FROM DVL_U2000_ENLACES E JOIN DVL_ENLACES_INSTANCIA EI ON EI.ENLACE_ID = E.ENLACES_INSTANCIA_ID WHERE (E.SOURCE_SITE = '$site' OR E.SINK_SITE = '$site') AND E.FECHA = (SELECT MAX(FECHA) FROM DVL_U2000_ENLACES)";
         self::ejecutar($sql);
         if(self::$nrows > 0) {
             $response['nodes'] = null;
@@ -76,6 +76,7 @@ class Topologias extends OracleDB {
                     );
                 }
 
+                self::$results[$i]['UTILIZACION'] = floatval(self::$results[$i]['UTILIZACION']);
                 $edge_color = null;
                 $edge_label_color = null;
                 if(empty(self::$results[$i]['RESOURCE_NAME'])) {
